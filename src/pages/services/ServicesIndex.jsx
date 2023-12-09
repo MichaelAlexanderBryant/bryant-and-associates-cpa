@@ -4,7 +4,7 @@ function ServicesIndex() {
             <div className="services-container">
                 <div className="business-services">
                     <h2>Business Services</h2>
-                    <ul className="no-bullet-indent">
+                    <ul className="no-bullet-indent services-list">
                         <li><a className="services-item" href="/services/bookkeeping">Bookkeeping</a></li>
                         <li><a className="services-item" href="/services/payroll">Payroll</a></li>
                         <li><a className="services-item" href="/services/financial-statements">Financial Statements</a></li>
@@ -14,7 +14,7 @@ function ServicesIndex() {
                 </div>
                 <div className="tax-services">
                     <h2>Tax Services</h2>
-                    <ul className="no-bullet-indent">
+                    <ul className="no-bullet-indent services-list">
                         <li><a className="services-item" href="/services/tax-preparation">Tax Preparation</a></li>
                         <li><a className="services-item" href="/services/tax-planning">Tax Planning</a></li>
                         <li><a className="services-item" href="/services/tax-problems">Tax Problems</a></li>
@@ -22,7 +22,7 @@ function ServicesIndex() {
                 </div>
                 <div className="quickbooks-services">
                     <h2>QuickBooks Services</h2>
-                    <ul className="no-bullet-indent">
+                    <ul className="no-bullet-indent services-list">
                         <li><a className="services-item" href="/services/quickbooks-setup">QuickBooks Setup</a></li>
                         <li><a className="services-item" href="/services/quickbooks-training">QuickBooks Training</a></li>
                     </ul>

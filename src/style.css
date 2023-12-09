@@ -4,6 +4,7 @@
   --white: #FFFFFF;
   --persian-green: #36A793;
   --silver: #AAAAAA;
+  --brown-gold: #b0621c;
 }
 
 
@@ -115,8 +116,21 @@ body {
   list-style-type: none;
 }
 
+.services-list > li {
+  padding: .2em 0;
+}
+
 .services-item, .about-item {
-  color: #b0621c;
+  color: var(--brown-gold);
+}
+
+.services-item:hover, .about-item:hover {
+  color: var(--sapphire);
+  text-decoration: none;
+}
+
+.list-bold {
+  font-weight:bold;
 }
 
 .footer-container {
