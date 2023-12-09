@@ -3,9 +3,10 @@ function NavigationBar() {
         <>
         <div className="navbar-container">
             <ul>
-                <li className="navbar-item">Home</li>
-                <li className="navbar-item">Services</li>
-                <li className="navbar-item">About Us</li>
+                <li className="navbar-item"><a href="/">Home</a></li>
+                <li className="navbar-item"><a href="/about">About</a></li>
+                <li className="navbar-item"><a href="/services">Services</a></li>
+                <li className="navbar-item"><a href="/contact">Contact</a></li>
             </ul>
         </div>
         </>

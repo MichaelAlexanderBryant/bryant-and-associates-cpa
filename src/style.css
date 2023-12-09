@@ -5,6 +5,11 @@
   text-align: center;
 } */
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .navbar-container {
   border:0.1em solid black;
 }
@@ -15,7 +20,32 @@
   justify-content: space-evenly;
 }
 
+.no-bullet-indent {
+  list-style: none;
+  padding-left: 0; 
+}
+
 .navbar-item {
+  list-style-type: none;
+}
+
+.navbar-item > a {
+  color: black;
+  text-decoration: none;
+}
+
+.content-container {
+  padding-left: 15em;
+  padding-right: 15em;
+}
+
+.homepage-boxes {
+  display: flex;
+  flex-direction: row;
+  gap:2em;
+}
+
+.get-in-touch-item {
   list-style-type: none;
 }
 
@@ -31,6 +61,16 @@
   flex-direction: row;
 }
 
-.footer-item {
+.contact-info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.contact-name {
+  font-weight: bold;
+}
+
+.contact-item {
   list-style-type: none;
 }
