@@ -1,0 +1,36 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+.navbar-container {
+  border:0.1em solid black;
+}
+
+.navbar-container > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.navbar-item {
+  list-style-type: none;
+}
+
+.footer-container {
+  border:0.1em solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.hours-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-item {
+  list-style-type: none;
+}
