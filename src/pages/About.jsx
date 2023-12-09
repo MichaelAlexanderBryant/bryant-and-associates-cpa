@@ -1,10 +1,12 @@
 import NavigationBar from "../components/NavigationBar";
 import Footer from "../components/Footer";
+import personCalc from "../assets/person-calc-banner.jpg"
 
 function About() {
     return (
         <>
             <NavigationBar/>
+            <img src={personCalc} className="homepage-photo"/>
             <div className="content-container">
                 <h1>About</h1>
                 <p>We'd like to provide you with an opportunity to get to know our firm's values as well as a little about our staff before you come to see us. 
