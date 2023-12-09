@@ -10,7 +10,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif;
 }
 
 html{
@@ -27,9 +28,20 @@ body {
   padding: .01em 0 .01em 0;
 }
 
+.nav-icon {
+  height: 1.25em;
+}
+
 .header-email-phone {
   display:flex;
   gap: 1em;
+  align-items: center;
+}
+
+.header-email-phone > li {
+  display:flex;
+  align-items: center;
+  gap: .5em;
 }
 
 /* .navbar-container {
@@ -74,6 +86,10 @@ body {
 
 }
 
+.homepage-intro-container {
+  padding-top: 4em;
+}
+
 .homepage-box-container {
   display: grid;
   grid-template-columns: repeat(3, 33.33333333%);
@@ -97,6 +113,10 @@ body {
 
 .get-in-touch-item {
   list-style-type: none;
+}
+
+.services-item {
+  color: #b0621c;
 }
 
 .footer-container {

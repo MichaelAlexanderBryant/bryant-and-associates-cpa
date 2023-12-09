@@ -1,10 +1,19 @@
+import email from "../assets/email.svg"
+import telephone from "../assets/telephone.svg"
+
 function NavigationBar() {
     return (
         <>
         <div className="header-container">
             <ul className="header-email-phone no-bullet-indent content-container">
-                <li>socalcpa123@gmail.com</li>
-                <li>(760) 289-5078</li>
+                <li>
+                    <img className="nav-icon" src={email}/>
+                    socalcpa123@gmail.com
+                </li>
+                <li>
+                    <img className="nav-icon" src={telephone}/>
+                    (760) 289-5078
+                </li>
             </ul>
         </div>
         <div className="content-container">

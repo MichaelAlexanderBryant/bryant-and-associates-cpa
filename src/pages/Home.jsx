@@ -8,7 +8,7 @@ function Home() {
             <NavigationBar />
             <img src={helpImage} className="homepage-photo"/>
             <div className="content-container">
-                <div>
+                <div className="homepage-intro-container">
                     <p>We are a full-service accounting firm licensed in California. We offer a broad range of services for business owners, executives, and independent
                         professionals. We are affordable, experienced, and friendly.
                     </p>
