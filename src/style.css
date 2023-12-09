@@ -115,7 +115,7 @@ body {
   list-style-type: none;
 }
 
-.services-item {
+.services-item, .about-item {
   color: #b0621c;
 }
 

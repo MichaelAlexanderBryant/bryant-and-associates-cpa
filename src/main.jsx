@@ -17,6 +17,9 @@ import TaxPlanning from './pages/services/TaxPlanning.jsx';
 import TaxPreparation from './pages/services/TaxPreparation.jsx';
 import TaxProblems from './pages/services/TaxProblems.jsx';
 import QuickBooksTraining from './pages/services/QuickBooksTraining.jsx';
+import AboutIndex from './pages/about/AboutIndex.jsx';
+import OurTeam from './pages/about/OurTeam.jsx';
+import OurValues from './pages/about/OurValues.jsx';
 
 
 const router = createBrowserRouter([
@@ -27,6 +30,11 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+    children: [
+      { index: true, element: <AboutIndex/>},
+      { path: "our-team", element: <OurTeam/>},
+      { path: "our-values", element: <OurValues />}
+    ]
   },
   {
     path: "/services",
