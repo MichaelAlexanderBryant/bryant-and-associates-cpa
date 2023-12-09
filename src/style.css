@@ -116,6 +116,10 @@ body {
   list-style-type: none;
 }
 
+.team-title {
+  font-style:italic;
+}
+
 .services-list > li {
   padding: .2em 0;
 }
