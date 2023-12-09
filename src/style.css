@@ -5,19 +5,39 @@
   text-align: center;
 } */
 
-body {
+
+html, body {
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.navbar-container {
+html{
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+.header-container {
   border:0.1em solid black;
 }
+
+.header-email-phone {
+  display:flex;
+  gap: 1em;
+}
+
+/* .navbar-container {
+  border:0.1em solid black;
+} */
 
 .navbar-container > ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: left;
+  gap: 2em;
 }
 
 .no-bullet-indent {
@@ -39,10 +59,17 @@ body {
   padding-right: 15em;
 }
 
-.homepage-boxes {
-  display: flex;
-  flex-direction: row;
-  gap:2em;
+.homepage-box-container {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33333333%);
+  justify-content: space-between;
+}
+
+.homepage-box {
+  text-align: center;
+  /* border: .1em solid black; */
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .get-in-touch-item {
