@@ -1,7 +1,8 @@
 import email from "../assets/email.svg"
 import telephone from "../assets/telephone.svg"
 
-function NavigationBar() {
+function NavigationBar({page}) {
+
     return (
         <>
         <div className="header-container">
@@ -18,14 +19,43 @@ function NavigationBar() {
         </div>
         <div className="content-container">
             <div className="name-navbar-container">
-                <h1>Bryant & Associates CPA</h1>
+                <h1 className="bryant-title">Bryant & Associates <span className="cpa-title">CPA</span></h1>
                 <div className="navbar-container">
-                    <ul className="no-bullet-indent">
-                        <li className="navbar-item"><a href="/">Home</a></li>
-                        <li className="navbar-item"><a href="/about">About</a></li>
-                        <li className="navbar-item"><a href="/services">Services</a></li>
-                        <li className="navbar-item"><a href="/contact">Contact</a></li>
-                    </ul>
+                    
+                        {page == "home" ?
+
+                            <ul className="no-bullet-indent">
+                                <li className="navbar-item"><a href="/" className="active-page">Home</a></li>
+                                <li className="navbar-item"><a href="/about">About</a></li>
+                                <li className="navbar-item"><a href="/services">Services</a></li>
+                                <li className="navbar-item"><a href="/contact">Contact</a></li>
+                            </ul> :
+
+                            page == "about" ?
+
+                            <ul className="no-bullet-indent">
+                                <li className="navbar-item"><a href="/">Home</a></li>
+                                <li className="navbar-item"><a href="/about" className="active-page">About</a></li>
+                                <li className="navbar-item"><a href="/services">Services</a></li>
+                                <li className="navbar-item"><a href="/contact">Contact</a></li>
+                            </ul> :
+
+                            page == "services" ?
+
+                            <ul className="no-bullet-indent">
+                                <li className="navbar-item"><a href="/">Home</a></li>
+                                <li className="navbar-item"><a href="/about">About</a></li>
+                                <li className="navbar-item"><a href="/services" className="active-page">Services</a></li>
+                                <li className="navbar-item"><a href="/contact">Contact</a></li>
+                            </ul> :
+
+                            <ul className="no-bullet-indent">
+                                <li className="navbar-item"><a href="/">Home</a></li>
+                                <li className="navbar-item"><a href="/about">About</a></li>
+                                <li className="navbar-item"><a href="/services">Services</a></li>
+                                <li className="navbar-item"><a href="/contact" className="active-page">Contact</a></li>
+                            </ul>
+                        }
                 </div>
             </div>
         </div>

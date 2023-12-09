@@ -5,7 +5,7 @@ import helpImage from "../assets/need-help-banner.jpg"
 function Home() {
     return (
         <div>
-            <NavigationBar />
+            <NavigationBar page={"home"} />
             <img src={helpImage} className="homepage-photo"/>
             <div className="content-container">
                 <div className="homepage-intro-container">

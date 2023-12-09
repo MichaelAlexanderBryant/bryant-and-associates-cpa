@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 function Services() {
     return (
         <div>
-            <NavigationBar />
+            <NavigationBar page="services" />
             <img src={taxPrep} className="homepage-photo"/>
             <div className="content-container">
                 <h1>Services</h1>

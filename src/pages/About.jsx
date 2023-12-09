@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 function About() {
     return (
         <>
-            <NavigationBar/>
+            <NavigationBar page="about"/>
             <img src={personCalc} className="homepage-photo"/>
             <div className="content-container">
                 <h1>About</h1>

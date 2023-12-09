@@ -2,11 +2,10 @@ import NavigationBar from "../components/NavigationBar";
 import Footer from "../components/Footer";
 import contactUs from "../assets/contact-banner.jpg"
 
-
 function Contact() {
     return (
         <>
-            <NavigationBar/>
+            <NavigationBar page="contact" />
             <img src={contactUs} className="homepage-photo"/>
             <div className="content-container">
                 <h1>Contact</h1>
@@ -21,28 +20,30 @@ function Contact() {
                                 <li className="contact-item">Phone: (760) 289-5078</li>
                             </ul>
                         </div>
-                        <div className="hours-container">
-                            <div>
-                                <ul className="no-bullet-indent">
-                                    <li className="contact-item">Monday</li>
-                                    <li className="contact-item">Tuesday</li>
-                                    <li className="contact-item">Wednesday</li>
-                                    <li className="contact-item">Thursday</li>
-                                    <li className="contact-item">Friday</li>
-                                    <li className="contact-item">Saturday</li>
-                                    <li className="contact-item">Sunday</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <ul className="no-bullet-indent">
-                                    <li className="contact-item">8 AM - 6 PM</li>
-                                    <li className="contact-item">8 AM - 6 PM</li>
-                                    <li className="contact-item">8 AM - 6 PM</li>
-                                    <li className="contact-item">8 AM - 6 PM</li>
-                                    <li className="contact-item">8 AM - 5 PM</li>
-                                    <li className="contact-item">By Appointment</li>
-                                    <li className="contact-item">Closed</li>
-                                </ul>
+                        <div>
+                            <div className="hours-container">
+                                <div>
+                                    <ul className="no-bullet-indent">
+                                        <li className="contact-item">Monday</li>
+                                        <li className="contact-item">Tuesday</li>
+                                        <li className="contact-item">Wednesday</li>
+                                        <li className="contact-item">Thursday</li>
+                                        <li className="contact-item">Friday</li>
+                                        <li className="contact-item">Saturday</li>
+                                        <li className="contact-item">Sunday</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul className="no-bullet-indent">
+                                        <li className="contact-item">8 AM - 6 PM</li>
+                                        <li className="contact-item">8 AM - 6 PM</li>
+                                        <li className="contact-item">8 AM - 6 PM</li>
+                                        <li className="contact-item">8 AM - 6 PM</li>
+                                        <li className="contact-item">8 AM - 5 PM</li>
+                                        <li className="contact-item">By Appointment</li>
+                                        <li className="contact-item">Closed</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
