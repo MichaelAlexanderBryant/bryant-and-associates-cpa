@@ -8,6 +8,15 @@ import Services from './pages/Services.jsx';
 import Bookkeeping from './pages/services/Bookkeeping.jsx';
 import Contact from './pages/Contact.jsx';
 import ServicesIndex from './pages/services/ServicesIndex.jsx';
+import FinancialStatements from './pages/services/FinancialStatements.jsx';
+import ForensicAccounting from './pages/services/ForensicAccounting.jsx';
+import NewBusinessFormation from './pages/services/NewBusinessFormation.jsx';
+import Payroll from './pages/services/Payroll.jsx';
+import QuickBooksSetup from './pages/services/QuickBooksSetup.jsx';
+import TaxPlanning from './pages/services/TaxPlanning.jsx';
+import TaxPreparation from './pages/services/TaxPreparation.jsx';
+import TaxProblems from './pages/services/TaxProblems.jsx';
+import QuickBooksTraining from './pages/services/QuickBooksTraining.jsx';
 
 
 const router = createBrowserRouter([
@@ -24,7 +33,16 @@ const router = createBrowserRouter([
     element: <Services />,
     children: [
       { index: true, element: <ServicesIndex />},
-      { path: "bookkeeping", element: <Bookkeeping />}
+      { path: "bookkeeping", element: <Bookkeeping />},
+      { path: "financial-statements", element: <FinancialStatements/>},
+      { path: "forensic-accounting", element: <ForensicAccounting />},
+      { path: "new-business-formation", element: <NewBusinessFormation />},
+      { path: "payroll", element: <Payroll />},
+      { path: "quickbooks-setup", element:<QuickBooksSetup/>},
+      { path: "quickbooks-training", element:<QuickBooksTraining />},
+      { path: "tax-planning", element: <TaxPlanning />},
+      { path: "tax-preparation", element: <TaxPreparation />},
+      { path: "tax-problems", element: <TaxProblems />}
     ]
   },
   {

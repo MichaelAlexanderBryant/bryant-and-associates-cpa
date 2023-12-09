@@ -1,7 +1,7 @@
 function Bookkeeping() {
     return (
         <div>
-            <h1>Bookkeeping</h1>
+            <h2>Bookkeeping</h2>
         </div>
     )
 }
