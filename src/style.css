@@ -33,7 +33,14 @@ body {
   color: var(--gray);
 }
 
-h1, h2:not(.homepage-box-title), h3, h4 {
+h1 {
+  font-family: adobe-caslon-pro, serif;
+  font-weight: 600;
+  font-variant-ligatures: common-ligatures;
+  color: black;
+}
+
+h2:not(.homepage-box-title), h3, h4 {
   font-family: adobe-caslon-pro, serif;
   font-weight: 600;
   font-variant-ligatures: common-ligatures;
@@ -137,6 +144,9 @@ h1, h2:not(.homepage-box-title), h3, h4 {
   height: auto;
   padding: 0;
   border: 0;
+  margin-bottom: 0;
+  font-size:0;
+  display:flex;
 }
 
 .homepage-intro-container {
@@ -150,6 +160,7 @@ h1, h2:not(.homepage-box-title), h3, h4 {
   grid-template-columns: repeat(3, 33.33333333%);
   justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  margin-top: 0;
 }
 
 .homepage-box1, .homepage-box2, .homepage-box3 {

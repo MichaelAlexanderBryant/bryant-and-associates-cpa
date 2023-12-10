@@ -1,7 +1,8 @@
 function NewBusinessFormation() {
     return (
         <div>
-            <h2>New Business Formation</h2>
+            <p><a href="/services" className="services-item">&lt; Back to Services</a></p>
+            <h1>New Business Formation</h1>
             <p>Thinking of owning your own business?</p>
 
             <p>Opening your own business is exciting and thrilling. It's everything that comes after the excitement and thrill has worn off that dictates whether a small business will make it or not. It's up to you to maintain and stretch out the "thrill and excitement" period forever.</p>

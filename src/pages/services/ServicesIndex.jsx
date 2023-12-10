@@ -1,6 +1,7 @@
 function ServicesIndex() {
     return (
         <div>
+            <h1 className="title">Services</h1>
             <div className="services-container">
                 <div className="business-services">
                     <h2>Business Services</h2>

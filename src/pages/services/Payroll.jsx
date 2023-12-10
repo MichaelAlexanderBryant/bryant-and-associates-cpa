@@ -1,11 +1,12 @@
 function Payroll() {
     return (
         <div>
-            <h2>Payroll</h2>
+            <p><a href="/services" className="services-item">&lt; Back to Services</a></p>
+            <h1>Payroll</h1>
             <p>When it comes to paying employees, laws and the IRS have made the payroll function a time consuming endeavor for the small business owner.</p>
             <p>Small business owners spend an average of eight hours a month performing payroll functions. That's 12 full days a year that could be spent generating sales, prospecting new business opportunities, improving products or services, or servicing customers.</p>
             <p>We offer payroll solutions that meet your business's needs and enable you to spend time doing what you do best--running your company.</p>
-            <h3>Why Outsource Your Payroll?</h3>
+            <h2>Why Outsource Your Payroll?</h2>
             <ul>
                 <li><span className="list-bold">It's Cost Effective</span>: Use your staff more efficiently by letting us handle payroll and the associated legal details. Reduce overhead by removing the need to hire specialized employees.
                 </li>
@@ -18,7 +19,7 @@ function Payroll() {
                 <li><span className="list-bold">Comprehensive Reports</span>: We have a wide variety of reader-friendly and accurate payroll reports. In addition to our standard reporting, for a nominal fee, we can provide you with customized reporting that gives you the information you need.
                 </li>
             </ul>
-            <h3>Get the Payroll Solution That Best Fits Your Needs.</h3>    
+            <h2>Get the Payroll Solution That Best Fits Your Needs.</h2>    
             <p>We know that when it comes to payroll service - no one size fits all. That's why we offer the following three custom payroll processing options.</p>
             <ol>
                 <li><span className="list-bold">Comprehensive Payroll Services</span>: Our Comprehensive Payroll Service takes care of all of the payroll processing for you, so that you won't have to. You get...
@@ -46,7 +47,7 @@ function Payroll() {
                     </ul>
                 </li>
             </ol>
-            <h3>Custom Payroll Reports Service</h3>
+            <h2>Custom Payroll Reports Service</h2>
             <p>There seems to be an endless amount of special reports Government agencies require. We can prepare the following reports for you.</p>
             <ul>
                 <li>Workers' Compensation Audits</li>
@@ -57,7 +58,7 @@ function Payroll() {
                 <li>1099 and 1096 processing</li>
                 <li>Preparation/assistance with Federal and State registration forms</li>
             </ul>
-            <h3>How much do we charge?</h3>
+            <h2>How much do we charge?</h2>
             <p>In order to give you an accurate price for our payroll services we need to know a little more about your business and what services you're interested in.</p>
         </div>
     )

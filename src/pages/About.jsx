@@ -9,7 +9,6 @@ function About() {
             <NavigationBar page="about"/>
             <img src={personCalc} className="homepage-photo"/>
             <div className="content-container">
-                <h1>About</h1>
                 <div className="about-container">
                     <Outlet />
                 </div>

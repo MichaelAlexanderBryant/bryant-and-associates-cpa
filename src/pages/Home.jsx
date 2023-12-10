@@ -1,8 +1,8 @@
 import NavigationBar from "../components/NavigationBar";
 import Footer from "../components/Footer";
-import helpImage from "../assets/need-help-banner.jpg"
+import helpImage from "../assets/home-page-banner.jpg"
 import knowUs from "../assets/know-us.svg"
-import help from "../assets/help.svg"
+import help from "../assets/get-help.svg"
 import contactUs from "../assets/contact.svg"
 
 function Home() {
