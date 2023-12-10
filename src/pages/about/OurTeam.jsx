@@ -14,14 +14,14 @@ function OurTeam() {
             <div className="team-profile">
                 <h4>Michael Bryant</h4>
                 <p className="team-title">Staff</p>
-                <p>Michael received a bachelor’s degree in physics and a master's degree in applied physics from Northern Arizona University. He has been in accounting since 2021 and
+                <p>Michael received a bachelor’s and a master's degree from Northern Arizona University. He has been with our firm since 2021 and
                     primarily works on bookkeeping and payroll.</p>
                 <p>In his free time, Michael enjoys computer programming and statistics.</p>
             </div>
             <div className="team-profile">
                 <h4>Debbie Dugan</h4>
                 <p className="team-title">Office Administrator</p>
-                <p>Debbie has worked in management for 30 years and co-owns Premier Carpet Care with her husband. She focuses on maintenance of the office, record keeping, and organization logistics.</p>
+                <p>Debbie has worked in management roles for 30 years and currently co-owns Premier Carpet Care with her husband. She focuses on maintenance of the office, record keeping, and organization logistics.</p>
 
                 <p>When not at work, Debbie enjoys gardening and spending time with family.</p>
             </div>

@@ -41,6 +41,10 @@ body {
   height: 1.25em;
 }
 
+.home-icon {
+  height: 3em;
+}
+
 .header-email-phone {
   display:flex;
   gap: 1em;
@@ -79,6 +83,10 @@ body {
   list-style-type: none;
 }
 
+.nav-title {
+  text-decoration: none;
+}
+
 .navbar-item > a {
   color: black;
   text-decoration: none;
@@ -100,23 +108,27 @@ body {
 .homepage-photo {
   width: 100%;
   height: auto;
-
+  padding: 0;
+  border: 0;
 }
 
 .homepage-intro-container {
-  padding-top: 4em;
+  padding: 1em 0;
 }
 
 .homepage-box-container {
+  padding: 0;
+  border: 0;
   display: grid;
   grid-template-columns: repeat(3, 33.33333333%);
   justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .homepage-box {
   text-align: center;
   padding: 4em;
-  height:10em;
+  height:14em;
 }
 
 .homepage-box:hover {

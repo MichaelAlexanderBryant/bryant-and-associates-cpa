@@ -19,7 +19,7 @@ function NavigationBar({page}) {
         </div>
         <div className="content-container">
             <div className="name-navbar-container">
-                <h1 className="bryant-title">Bryant & Associates <span className="cpa-title">CPA</span></h1>
+                <a href="/" className="nav-title"><div><h1 className="bryant-title">Bryant & Associates <span className="cpa-title">CPA</span></h1></div></a>
                 <div className="navbar-container">
                     
                         {page == "home" ?
