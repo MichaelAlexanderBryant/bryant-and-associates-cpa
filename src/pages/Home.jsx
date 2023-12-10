@@ -11,30 +11,30 @@ function Home() {
             <NavigationBar page={"home"} />
             <img src={helpImage} className="homepage-photo"/>
             <div className="content-container">
-            <div className="homepage-box-container">
+                <div className="homepage-box-container">
                     <a href="/about" className="clickable-box">
-                        <div className="homepage-box">
+                        <div className="homepage-box1">
                             <div>
-                                <img src={knowUs} className="home-icon"/>
-                                <h2>Get to Know Us</h2>
+                                <img src={knowUs} className="home-icon box-icon"/>
+                                <h2 className="homepage-box-title">Get to Know Us</h2>
                             </div>
                             <p>Our team has been helping clients in the San Diego, California area for years. Find out what makes us tick...</p>
                         </div>
                     </a>
                     <a href="/services" className="clickable-box">
-                        <div className="homepage-box">
+                        <div className="homepage-box2">
                             <div>
-                                <img src={help} className="home-icon"/>
-                                <h2>Get Help</h2>
+                                <img src={help} className="home-icon box-icon"/>
+                                <h2 className="homepage-box-title">Get Help</h2>
                             </div>
                             <p>We offer services for business owners, executives, and individuals. Find out how we can help...</p>
                         </div>
                     </a>
                     <a href="/contact" className="clickable-box">
-                        <div className="homepage-box">
+                        <div className="homepage-box3">
                             <div>
-                                <img src={contactUs} className="home-icon"/>
-                                <h2>Get in Touch</h2>
+                                <img src={contactUs} className="home-icon box-icon"/>
+                                <h2 className="homepage-box-title">Get in Touch</h2>
                             </div>
                             
                             <ul className="no-bullet-indent">

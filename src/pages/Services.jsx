@@ -9,7 +9,7 @@ function Services() {
             <NavigationBar page="services" />
             <img src={taxPrep} className="homepage-photo"/>
             <div className="content-container">
-                <h1>Services</h1>
+                <h1 className="title">Services</h1>
                 <div className="services-container">
                     <Outlet />
                 </div>

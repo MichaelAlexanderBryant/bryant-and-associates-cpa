@@ -5,7 +5,7 @@ function NavigationBar({page}) {
 
     return (
         <>
-        <div className="header-container">
+        <div className="header-container header-top">
             <ul className="header-email-phone no-bullet-indent content-container">
                 <li>
                     <img className="nav-icon" src={email}/>
@@ -19,7 +19,7 @@ function NavigationBar({page}) {
         </div>
         <div className="content-container">
             <div className="name-navbar-container">
-                <a href="/" className="nav-title"><div><h1 className="bryant-title">Bryant & Associates <span className="cpa-title">CPA</span></h1></div></a>
+                <a href="/" className="nav-title title"><div><h1 className="bryant-title">Bryant & Associates <span className="cpa-title">CPA</span></h1></div></a>
                 <div className="navbar-container">
                     
                         {page == "home" ?
