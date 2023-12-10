@@ -10,7 +10,10 @@ function About() {
             <img src={personCalc} className="homepage-photo"/>
             <div className="content-container">
                 <h1>About</h1>
-                <Outlet />
+                <div className="about-container">
+                    <Outlet />
+                </div>
+                
             </div>
             <Footer/>
         </>
