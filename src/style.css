@@ -471,4 +471,8 @@ h2:not(.homepage-box-title), h3, h4 {
     padding-bottom: 5em;
   }
 
+  .contact-content {
+    align-items:flex-start;
+  }
+
 }
