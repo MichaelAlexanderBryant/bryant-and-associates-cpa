@@ -20,8 +20,8 @@ function Contact() {
                                 <li className="contact-item contact-name">Bryant & Associates CPA</li>
                                 <li className="contact-item">3800 Oceanic Drive, Suite 116</li>
                                 <li className="contact-item">Oceanside, CA 92056</li>
-                                <li className="contact-item">socalcpa123@gmail.com</li>
-                                <li className="contact-item">Phone: (760) 289-5078</li>
+                                <li className="contact-item"><a className="contact-email-telephone" href="mailto:socalcpa123@gmail.com">socalcpa123@gmail.com</a></li>
+                                <li className="contact-item"><a className="contact-email-telephone" href="tel:7602895078">(760) 289-5078</a></li>
                             </ul>
                         </div>
                         <div>

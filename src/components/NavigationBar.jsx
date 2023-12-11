@@ -9,11 +9,11 @@ function NavigationBar({page}) {
             <ul className="header-email-phone no-bullet-indent content-container">
                 <li>
                     <img className="nav-icon" src={email}/>
-                    socalcpa123@gmail.com
+                    <a className="nav-email-telephone-num" href="mailto:socalcpa123@gmail.com">socalcpa123@gmail.com</a>
                 </li>
                 <li>
                     <img className="nav-icon" src={telephone}/>
-                    (760) 289-5078
+                    <a className="nav-email-telephone-num" href="tel:7602895078">(760) 289-5078</a>
                 </li>
             </ul>
         </div>

@@ -81,6 +81,8 @@ h2:not(.homepage-box-title), h3, h4 {
   color: var(--brown-red);
 }
 
+
+
 .nav-icon {
   height: 1.25em;
 }
@@ -110,6 +112,11 @@ h2:not(.homepage-box-title), h3, h4 {
   display:flex;
   align-items: center;
   gap: .5em;
+}
+
+.nav-email-telephone-num {
+  text-decoration: none;
+  color: white;
 }
 
 .navbar-container > ul {
@@ -420,6 +427,10 @@ h2:not(.homepage-box-title), h3, h4 {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 5em;
+}
+
+.contact-email-telephone {
+  color: var(--brown-gold);
 }
 
 
