@@ -1,12 +1,16 @@
 import NavigationBar from "../components/NavigationBar";
 import Footer from "../components/Footer";
 import contactUs from "../assets/contact-banner.jpg"
+import contactUs800 from "../assets/contact-banner-800w.jpg"
 
 function Contact() {
     return (
         <>
             <NavigationBar page="contact" />
-            <img src={contactUs} className="homepage-photo"/>
+            <picture>
+                <source media="(max-width: 800px)" srcSet={contactUs800} sizes="800px"/>
+                <img src={contactUs} className="homepage-photo"/>
+            </picture>
             <div className="content-container">
                 <h1>Contact</h1>
                 <div className="contact-content">

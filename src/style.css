@@ -176,14 +176,14 @@ h2:not(.homepage-box-title), h3, h4 {
   color: var(--brown-gold);
 }
 
-.content-container {
+.content-container, .mobile-no-padding {
   padding-left: 15em;
   padding-right: 15em;
 }
 
 @media (max-width: 1550px) {
 
-  .content-container {
+  .content-container, .mobile-no-padding {
     padding-left: 10em;
     padding-right: 10em;
   }
@@ -193,7 +193,7 @@ h2:not(.homepage-box-title), h3, h4 {
 
 @media (max-width: 1375px) {
 
-  .content-container {
+  .content-container, .mobile-no-padding {
     padding-left: 5em;
     padding-right: 5em;
   }
@@ -203,11 +203,40 @@ h2:not(.homepage-box-title), h3, h4 {
 
 @media (max-width: 1225px) {
 
-  .content-container {
+  .content-container, .mobile-no-padding {
     padding-left: 2.5em;
     padding-right: 2.5em;
   }
 
+
+}
+
+/* @media (max-width: 600px) {
+
+  .content-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+} */
+
+@media (max-width: 800px) {
+
+  .mobile-no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  div.homepage-intro-container {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+
+  .homepage-box-container {
+    margin-top: .25em;
+    gap: .25em;
+  }
 
 }
 
@@ -257,6 +286,11 @@ h2:not(.homepage-box-title), h3, h4 {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3,1fr);
     justify-content:center;
+  }
+
+  .homepage-box-container {
+    margin-top: .25em;
+    gap: .25em;
   }
 
 }
