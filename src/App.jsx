@@ -19,6 +19,9 @@ import OurValues from './pages/about/OurValues.jsx';
 import {Route, Routes} from 'react-router-dom'
 import { Fragment } from "react"
 import './style.css'
+import CfoAdvisory from './pages/services/CfoAdvisory.jsx';
+import NonProfitAccounting from './pages/services/NonProfitAccounting.jsx';
+import TrustAccounting from './pages/services/TrustAccounting.jsx';
 
 function App()
 {
@@ -33,14 +36,17 @@ function App()
                     <Route path="/services" element= {<Services />} >
                         <Route index element={<ServicesIndex />} />
                         <Route path="/services/bookkeeping" element={<Bookkeeping />} />
+                        <Route path="/services/cfo-advisory" element={<CfoAdvisory />} />
                         <Route path="/services/financial-statements" element={<FinancialStatements />} />
                         <Route path="/services/forensic-accounting" element={<ForensicAccounting />} />
                         <Route path="/services/new-business-formation" element={<NewBusinessFormation />} />
+                        <Route path="/services/non-profit-accounting" element={<NonProfitAccounting />} />
                         <Route path="/services/payroll" element={<Payroll />} />
                         <Route path="/services/quickbooks-setup" element={<QuickBooksSetup />} />
                         <Route path="/services/tax-planning" element={<TaxPlanning />} />
                         <Route path="/services/tax-preparation" element={<TaxPreparation />} />
                         <Route path="/services/tax-problems" element={<TaxProblems />} />
+                        <Route path="/services/trust-accounting" element={<TrustAccounting />} />
                         <Route path="/services/quickbooks-training" element={<QuickBooksTraining />} />
                     </Route>
                     <Route path="/contact" element={<Contact />} />

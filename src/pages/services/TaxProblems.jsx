@@ -26,6 +26,7 @@ function TaxProblems() {
                 <li>Get out of a tax debt caused by misdeeds committed by your spouse.</li>
                 <li>See what the IRS has on you.</li>
             </ul>
+            <p>We can help you with IRS garnishments, IRS liens, and IRS and FTB audits.</p>
             <p>Get a consultation with our tax specialist by giving us a call.</p>
         </div>
     )

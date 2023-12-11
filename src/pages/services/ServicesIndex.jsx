@@ -10,6 +10,8 @@ function ServicesIndex() {
                         <li><a className="services-item" href="/bryant-and-associates-cpa/#/services/payroll">Payroll</a></li>
                         <li><a className="services-item" href="/bryant-and-associates-cpa/#/services/financial-statements">Financial Statements</a></li>
                         <li><a className="services-item" href="/bryant-and-associates-cpa/#/services/new-business-formation">New Business Formation</a></li>
+                        <li><a className="services-item" href="/bryant-and-associates-cpa/#/services/non-profit-accounting">Non-Profit Accounting</a></li>
+                        <li><a className="services-item" href="/bryant-and-associates-cpa/#/services/cfo-advisory">CFO Advisory</a></li>
                         <li><a className="services-item" href="/bryant-and-associates-cpa/#/services/forensic-accounting">Forensic Accounting</a></li>
                     </ul>
                 </div>
@@ -19,6 +21,7 @@ function ServicesIndex() {
                         <li><a className="services-item" href="/bryant-and-associates-cpa/#/services/tax-preparation">Tax Preparation</a></li>
                         <li><a className="services-item" href="/bryant-and-associates-cpa/#/services/tax-planning">Tax Planning</a></li>
                         <li><a className="services-item" href="/bryant-and-associates-cpa/#/services/tax-problems">Tax Problems</a></li>
+                        <li><a className="services-item" href="/bryant-and-associates-cpa/#/services/trust-accounting">Trust Accounting</a></li>
                     </ul>
                 </div>
                 <div className="quickbooks-services">

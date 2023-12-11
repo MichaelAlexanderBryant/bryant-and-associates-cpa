@@ -81,8 +81,6 @@ h2:not(.homepage-box-title), h3, h4 {
   color: var(--brown-red);
 }
 
-
-
 .nav-icon {
   height: 1.25em;
 }
@@ -136,8 +134,6 @@ h2:not(.homepage-box-title), h3, h4 {
   }
 
 }
-
-
 
 .name-navbar-container {
   display: flex;
@@ -217,16 +213,6 @@ h2:not(.homepage-box-title), h3, h4 {
 
 
 }
-
-/* @media (max-width: 600px) {
-
-  .content-container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-
-} */
 
 @media (max-width: 800px) {
 
@@ -433,20 +419,6 @@ h2:not(.homepage-box-title), h3, h4 {
   color: var(--brown-gold);
 }
 
-
-
-/* @media (max-width: 1150px) {
-
-  .contact-content {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 5em;
-  }
-
-} */
-
 .g-map {
   width:50em;
   height:20em;
@@ -470,7 +442,6 @@ h2:not(.homepage-box-title), h3, h4 {
   }
 
 }
-
 
 @media (max-width: 650px) {
 

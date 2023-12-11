@@ -6,7 +6,7 @@ function NewBusinessFormation() {
             <p>Thinking of owning your own business?</p>
 
             <p>Opening your own business is exciting and thrilling. It's everything that comes after the excitement and thrill has worn off that dictates whether a small business will make it or not. It's up to you to maintain and stretch out the "thrill and excitement" period forever.</p>
-            <p> methodical plan of action is needed to fulfill your dream or goal of being your own boss and running a successful business. Success lies in the approach you choose to take. We help you avoid the common pitfalls that many new small business owners make when starting their new venture.</p>
+            <p>A methodical plan of action is needed to fulfill your dream or goal of being your own boss and running a successful business. Success lies in the approach you choose to take. We help you avoid the common pitfalls that many new small business owners make when starting their new venture.</p>
             <span className="list-bold">We help you...</span>
             <ol>
                 <li>Determine your start-up capital needs.</li>
