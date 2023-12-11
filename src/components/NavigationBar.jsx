@@ -25,8 +25,8 @@ function NavigationBar({page}) {
                         {page == "home" ?
 
                             <ul className="no-bullet-indent">
-                                <li className="navbar-item"><a href="/" className="active-page">Home</a></li>
-                                <li className="navbar-item"><a href="/#/bryant-and-associates/about">About</a></li>
+                                <li className="navbar-item"><a href="/bryant-and-associates-cpa/" className="active-page">Home</a></li>
+                                <li className="navbar-item"><a href="/bryant-and-associates-cpa/#/about">About</a></li>
                                 <li className="navbar-item"><a href="/#/services">Services</a></li>
                                 <li className="navbar-item"><a href="/#/contact">Contact</a></li>
                             </ul> :
