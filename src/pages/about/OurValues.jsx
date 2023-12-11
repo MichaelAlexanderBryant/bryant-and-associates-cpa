@@ -1,7 +1,7 @@
 function OurValues() {
     return (
         <div>
-            <p><a href="/#/about" className="about-item">&lt; Back to About</a></p>
+            <p><a href="/bryant-and-associates-cpa/#/about" className="about-item">&lt; Back to About</a></p>
             <h1>Our Values</h1>
             <p>Our firm provides outstanding service to our clients because of our dedication to the three underlying principles of professionalism, responsiveness and quality.</p>
             <h2>Professionalism</h2>

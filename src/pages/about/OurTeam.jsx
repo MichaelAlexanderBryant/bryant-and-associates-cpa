@@ -1,7 +1,7 @@
 function OurTeam() {
     return (
         <div>
-            <p><a href="/#/about" className="about-item">&lt; Back to About</a></p>
+            <p><a href="/bryant-and-associates-cpa/#/about" className="about-item">&lt; Back to About</a></p>
             <h1>Our Team</h1>
             <p>Bryant & Associates CPA is a full-service CPA firm licensed in California.</p>
             <h2>Meet Our Team:</h2>

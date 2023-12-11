@@ -1,7 +1,7 @@
 function QuickBooksSetup() {
     return (
         <div>
-            <p><a href="/#/services" className="services-item">&lt; Back to Services</a></p>
+            <p><a href="/bryant-and-associates-cpa/#/services" className="services-item">&lt; Back to Services</a></p>
             <h1>QuickBooks Setup</h1>
             <p>Although QuickBooks is designed for the layman to understand, the initial setup and installation must be done correctly in order for future information to be accurate.</p>
             <p>All information necessary to setup manual accounting records is also necessary to setup and install QuickBooks on your desktop. This task is even more complicated if you switch from manual accounting operations to QuickBooks in the middle of the year.</p>
