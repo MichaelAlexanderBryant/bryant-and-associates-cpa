@@ -36,9 +36,9 @@ function App()
                     <Route path="/services" element= {<Services />} >
                         <Route index element={<ServicesIndex />} />
                         <Route path="/services/bookkeeping" element={<Bookkeeping />} />
-                        <Route path="/services/cfo-advisory" element={<CfoAdvisory />} />
+                        <Route path="/services/business-and-cfo-advisory" element={<CfoAdvisory />} />
                         <Route path="/services/financial-statements" element={<FinancialStatements />} />
-                        <Route path="/services/forensic-accounting" element={<ForensicAccounting />} />
+                        <Route path="/services/litigation-support-and-forensic-accounting" element={<ForensicAccounting />} />
                         <Route path="/services/new-business-formation" element={<NewBusinessFormation />} />
                         <Route path="/services/non-profit-accounting" element={<NonProfitAccounting />} />
                         <Route path="/services/payroll" element={<Payroll />} />

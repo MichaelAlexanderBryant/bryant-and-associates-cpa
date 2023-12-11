@@ -8,7 +8,7 @@ function OurTeam() {
             <div className="team-profile">
                 <h3>Suzanne Bryant</h3>
                 <p className="team-title">CPA</p>
-                <p>Suzanne received a bachelor’s degree in accounting and finance from Barry University and holds a CPA designation. She has been an accountant for over 20 years
+                <p>Suzanne received a bachelor’s degree in accounting and finance and holds a CPA designation. She has been an accountant for over 30 years
                     and has owned her own firm for 10 years. Her areas of expertise include income taxes, forensic accounting, homeowner association elections and accounting, bookkeeping, and payroll.</p>
                 <p>Her personal interests include watching movies and attending church gatherings.</p>
             </div>
