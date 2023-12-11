@@ -24,11 +24,11 @@ import OurValues from './pages/about/OurValues.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "",
     element: <Home />,
   },
   {
-    path: "/about",
+    path: "about",
     element: <About />,
     children: [
       { index: true, element: <AboutIndex/>},
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
     ]
   },
   {
-    path: "/services",
+    path: "services",
     element: <Services />,
     children: [
       { index: true, element: <ServicesIndex />},
@@ -54,7 +54,7 @@ const router = createBrowserRouter([
     ]
   },
   {
-    path: "/contact",
+    path: "contact",
     element: <Contact />
   }
 ]);
