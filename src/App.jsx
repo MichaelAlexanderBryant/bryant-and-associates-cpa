@@ -16,19 +16,37 @@ import QuickBooksTraining from './pages/services/QuickBooksTraining.jsx';
 import AboutIndex from './pages/about/AboutIndex.jsx';
 import OurTeam from './pages/about/OurTeam.jsx';
 import OurValues from './pages/about/OurValues.jsx';
-import {HashRouter, Route, Routes} from 'react-router-dom'
+import {Route, Routes} from 'react-router-dom'
+import { Fragment } from "react"
 import './style.css'
 
 function App()
 {
-  return <HashRouter>
-          <Routes>
-            <Route path="/" element= {<Home />} />
-            <Route path="/about" element= {<About />} />
-            <Route path="/services" element= {<Services />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </HashRouter>
+  return <Fragment>
+                <Routes>
+                    <Route path="/" element= {<Home />} />
+                    <Route path="/about" element= {<About />} >
+                        <Route index element={<AboutIndex />} />
+                        <Route path="/about/our-values" element={<OurValues />} />
+                        <Route path="/about/our-team" element={<OurTeam />} />
+                    </Route>
+                    <Route path="/services" element= {<Services />} >
+                        <Route index element={<ServicesIndex />} />
+                        <Route path="/services/bookkeeping" element={<Bookkeeping />} />
+                        <Route path="/services/financial-statements" element={<FinancialStatements />} />
+                        <Route path="/services/forensic-accounting" element={<ForensicAccounting />} />
+                        <Route path="/services/new-business-formation" element={<NewBusinessFormation />} />
+                        <Route path="/services/payroll" element={<Payroll />} />
+                        <Route path="/services/quickbooks-setup" element={<QuickBooksSetup />} />
+                        <Route path="/services/tax-planning" element={<TaxPlanning />} />
+                        <Route path="/services/tax-preparation" element={<TaxPreparation />} />
+                        <Route path="/services/tax-problems" element={<TaxProblems />} />
+                        <Route path="/services/quickbooks-training" element={<QuickBooksTraining />} />
+                    </Route>
+                    <Route path="/contact" element={<Contact />} />
+                </Routes>
+            </Fragment>
+        
 }
 
 export default App
