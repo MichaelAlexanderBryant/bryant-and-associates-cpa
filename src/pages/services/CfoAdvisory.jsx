@@ -2,7 +2,7 @@ function CfoAdvisory() {
     return (
         <div>
             <p><a href="/bryant-and-associates-cpa/#/services" className="services-item">&lt; Back to Services</a></p>
-            <h1>Business and CFO Advisory</h1>
+            <h1>Business & CFO Advisory</h1>
             <p>An outsourced business advisor or CFO is exactly what it sounds like. Instead of hiring a financial executive or advisor for your company, you partner with a CPA that can replicate their responsibilities. Business advisor and CFO services typically provide higher-level accounting functions focused on your organization’s financials.</p>
             <p className="list-bold">What we can do for you is:</p>
             <ul>
