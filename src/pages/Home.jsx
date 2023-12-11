@@ -13,21 +13,21 @@ function Home() {
             <div className="content-container">
                 <div className="homepage-container">
                     <div className="homepage-box-container">
-                        <a href="/about" className="clickable-box">
+                        <a href="/#/about" className="clickable-box">
                             <div className="homepage-box1">
                                 <img src={knowUs} className="home-icon box-icon"/>
                                 <h2 className="homepage-box-title">Get to Know Us</h2>
                                 <p>Our team has been helping clients in the San Diego, California area for years. Find out what makes us tick...</p>
                             </div>
                         </a>
-                        <a href="/services" className="clickable-box">
+                        <a href="/#/services" className="clickable-box">
                             <div className="homepage-box2">
                                 <img src={help} className="home-icon box-icon"/>
                                 <h2 className="homepage-box-title">Get Help</h2>
                                 <p>We offer services for business owners, executives, and individuals. Find out how we can help...</p>
                             </div>
                         </a>
-                        <a href="/contact" className="clickable-box">
+                        <a href="/#/contact" className="clickable-box">
                             <div className="homepage-box3">
                                 <img src={contactUs} className="home-icon box-icon"/>
                                 <h2 className="homepage-box-title">Get in Touch</h2>

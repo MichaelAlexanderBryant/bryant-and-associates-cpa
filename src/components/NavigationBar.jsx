@@ -26,34 +26,34 @@ function NavigationBar({page}) {
 
                             <ul className="no-bullet-indent">
                                 <li className="navbar-item"><a href="/" className="active-page">Home</a></li>
-                                <li className="navbar-item"><a href="/about">About</a></li>
-                                <li className="navbar-item"><a href="/services">Services</a></li>
-                                <li className="navbar-item"><a href="/contact">Contact</a></li>
+                                <li className="navbar-item"><a href="/#/about">About</a></li>
+                                <li className="navbar-item"><a href="/#/services">Services</a></li>
+                                <li className="navbar-item"><a href="/#/contact">Contact</a></li>
                             </ul> :
 
                             page == "about" ?
 
                             <ul className="no-bullet-indent">
                                 <li className="navbar-item"><a href="/">Home</a></li>
-                                <li className="navbar-item"><a href="/about" className="active-page">About</a></li>
-                                <li className="navbar-item"><a href="/services">Services</a></li>
-                                <li className="navbar-item"><a href="/contact">Contact</a></li>
+                                <li className="navbar-item"><a href="/#/about" className="active-page">About</a></li>
+                                <li className="navbar-item"><a href="/#/services">Services</a></li>
+                                <li className="navbar-item"><a href="/#/contact">Contact</a></li>
                             </ul> :
 
                             page == "services" ?
 
                             <ul className="no-bullet-indent">
                                 <li className="navbar-item"><a href="/">Home</a></li>
-                                <li className="navbar-item"><a href="/about">About</a></li>
-                                <li className="navbar-item"><a href="/services" className="active-page">Services</a></li>
-                                <li className="navbar-item"><a href="/contact">Contact</a></li>
+                                <li className="navbar-item"><a href="/#/about">About</a></li>
+                                <li className="navbar-item"><a href="/#/services" className="active-page">Services</a></li>
+                                <li className="navbar-item"><a href="/#/contact">Contact</a></li>
                             </ul> :
 
                             <ul className="no-bullet-indent">
                                 <li className="navbar-item"><a href="/">Home</a></li>
-                                <li className="navbar-item"><a href="/about">About</a></li>
-                                <li className="navbar-item"><a href="/services">Services</a></li>
-                                <li className="navbar-item"><a href="/contact" className="active-page">Contact</a></li>
+                                <li className="navbar-item"><a href="/#/about">About</a></li>
+                                <li className="navbar-item"><a href="/#/services">Services</a></li>
+                                <li className="navbar-item"><a href="/#/contact" className="active-page">Contact</a></li>
                             </ul>
                         }
                 </div>
