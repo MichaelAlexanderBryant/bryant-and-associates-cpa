@@ -17,7 +17,7 @@ function Home() {
             <div className="content-container mobile-no-padding">
                 <div className="homepage-container">
                     <div className="homepage-box-container">
-                        <a href="/bryant-and-associates-cpa/#/about" className="clickable-box">
+                        <a href="/#/about" className="clickable-box">
                             <div className="homepage-box1">
                                 <img src={knowUs} className="home-icon box-icon"/>
                                 <h2 className="homepage-box-title">Get to Know Us</h2>
