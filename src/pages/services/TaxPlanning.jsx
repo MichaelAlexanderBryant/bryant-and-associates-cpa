@@ -1,7 +1,7 @@
 function TaxPlanning() {
     return (
         <div>
-            <p><a href="/bryant-and-associates-cpa/#/services" className="services-item">&lt; Back to Services</a></p>
+            <p><a href="/#/services" className="services-item">&lt; Back to Services</a></p>
             <h2>Tax Planning</h2>
             <p>Planning is the key to successfully and legally reducing your tax liability. We go beyond tax compliance and proactively recommend tax saving strategies to maximize your after-tax income.</p>
             <p>We make it a priority to enhance our mastery of the current tax law, complex tax code, and new tax regulations by attending frequent tax seminars.</p>

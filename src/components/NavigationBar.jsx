@@ -19,41 +19,41 @@ function NavigationBar({page}) {
         </div>
         <div className="content-container">
             <div className="name-navbar-container">
-                <a href="/bryant-and-associates-cpa/#" className="nav-title title"><div><h1 className="bryant-title">Bryant & Associates <span className="cpa-title">CPA</span></h1></div></a>
+                <a href="/#" className="nav-title title"><div><h1 className="bryant-title">Bryant & Associates <span className="cpa-title">CPA</span></h1></div></a>
                 <div className="navbar-container">
                     
                         {page == "home" ?
 
                             <ul className="no-bullet-indent">
-                                <li className="navbar-item"><a href="/bryant-and-associates-cpa/#" className="active-page">Home</a></li>
-                                <li className="navbar-item"><a href="/bryant-and-associates-cpa/#/about">About</a></li>
-                                <li className="navbar-item"><a href="/bryant-and-associates-cpa/#/services">Services</a></li>
-                                <li className="navbar-item"><a href="/bryant-and-associates-cpa/#/contact">Contact</a></li>
+                                <li className="navbar-item"><a href="/#" className="active-page">Home</a></li>
+                                <li className="navbar-item"><a href="/#/about">About</a></li>
+                                <li className="navbar-item"><a href="/#/services">Services</a></li>
+                                <li className="navbar-item"><a href="/#/contact">Contact</a></li>
                             </ul> :
 
                             page == "about" ?
 
                             <ul className="no-bullet-indent">
-                                <li className="navbar-item"><a href="/bryant-and-associates-cpa/#">Home</a></li>
-                                <li className="navbar-item"><a href="/bryant-and-associates-cpa/#/about" className="active-page">About</a></li>
-                                <li className="navbar-item"><a href="/bryant-and-associates-cpa/#/services">Services</a></li>
-                                <li className="navbar-item"><a href="/bryant-and-associates-cpa/#/contact">Contact</a></li>
+                                <li className="navbar-item"><a href="/#">Home</a></li>
+                                <li className="navbar-item"><a href="/#/about" className="active-page">About</a></li>
+                                <li className="navbar-item"><a href="/#/services">Services</a></li>
+                                <li className="navbar-item"><a href="/#/contact">Contact</a></li>
                             </ul> :
 
                             page == "services" ?
 
                             <ul className="no-bullet-indent">
-                                <li className="navbar-item"><a href="/bryant-and-associates-cpa/#">Home</a></li>
-                                <li className="navbar-item"><a href="/bryant-and-associates-cpa/#/about">About</a></li>
-                                <li className="navbar-item"><a href="/bryant-and-associates-cpa/#/services" className="active-page">Services</a></li>
-                                <li className="navbar-item"><a href="/bryant-and-associates-cpa/#/contact">Contact</a></li>
+                                <li className="navbar-item"><a href="/#">Home</a></li>
+                                <li className="navbar-item"><a href="/#/about">About</a></li>
+                                <li className="navbar-item"><a href="/#/services" className="active-page">Services</a></li>
+                                <li className="navbar-item"><a href="/#/contact">Contact</a></li>
                             </ul> :
 
                             <ul className="no-bullet-indent">
-                                <li className="navbar-item"><a href="/bryant-and-associates-cpa/#">Home</a></li>
-                                <li className="navbar-item"><a href="/bryant-and-associates-cpa/#/about">About</a></li>
-                                <li className="navbar-item"><a href="/bryant-and-associates-cpa/#/services">Services</a></li>
-                                <li className="navbar-item"><a href="/bryant-and-associates-cpa/#/contact" className="active-page">Contact</a></li>
+                                <li className="navbar-item"><a href="/#">Home</a></li>
+                                <li className="navbar-item"><a href="/#/about">About</a></li>
+                                <li className="navbar-item"><a href="/#/services">Services</a></li>
+                                <li className="navbar-item"><a href="/#/contact" className="active-page">Contact</a></li>
                             </ul>
                         }
                 </div>

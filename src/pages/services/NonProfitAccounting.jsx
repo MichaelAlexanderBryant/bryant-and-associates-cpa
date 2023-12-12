@@ -1,7 +1,7 @@
 function NonProfitAccounting() {
     return (
         <div>
-            <p><a href="/bryant-and-associates-cpa/#/services" className="services-item">&lt; Back to Services</a></p>
+            <p><a href="/#/services" className="services-item">&lt; Back to Services</a></p>
             <h1>Non-Profit Accounting</h1>
             <p>What drew you the most when you started working at your non-profit organization? There is a good chance it did not involve arduous paperwork, difficult calculations, or stringent compliance rules. It is likely that the non-profit organization’s objective was and still is, what motivated you to become involved.</p>
             <p>On the other hand, running an efficient non-profit organization entails a lot of tiresome tasks, such as filling out paperwork, crunching numbers, and other similar activities. Accounting for non-profit organizations is one task that many professionals working in the non-profit sector would rather avoid.</p>

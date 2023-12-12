@@ -1,7 +1,7 @@
 function TrustAccounting() {
     return (
         <div>
-            <p><a href="/bryant-and-associates-cpa/#/services" className="services-item">&lt; Back to Services</a></p>
+            <p><a href="/#/services" className="services-item">&lt; Back to Services</a></p>
             <h1>Trust Accounting</h1>
             <p>What is trust accounting? Trust accounting protects beneficiaries against negligent or underhanded trustees, but it also provides essential protection for trustees against liability. In simple terms, trust accounting is a window into how a trustee is administering the trust. But that’s only telling part of the story. At Bryant & Associates CPA, we have prepared accurate and compliant accountings for decades.</p>
             <h2>What is Trust Accounting?</h2>
