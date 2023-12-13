@@ -1,30 +1,31 @@
-import Home from './pages/Home.jsx';
-import About from './pages/About.jsx';
-import Services from './pages/Services.jsx';
-import Bookkeeping from './pages/services/Bookkeeping.jsx';
-import Contact from './pages/Contact.jsx';
+import Home from './pages/home/Home.jsx';
+import About from './pages/about/About.jsx';
+import Services from './pages/services/Services.jsx';
+import Bookkeeping from './pages/services/articles/Bookkeeping.jsx';
+import Contact from './pages/contact/Contact.jsx';
 import ServicesIndex from './pages/services/ServicesIndex.jsx';
-import FinancialStatements from './pages/services/FinancialStatements.jsx';
-import ForensicAccounting from './pages/services/ForensicAccounting.jsx';
-import NewBusinessFormation from './pages/services/NewBusinessFormation.jsx';
-import Payroll from './pages/services/Payroll.jsx';
-import QuickBooksSetup from './pages/services/QuickBooksSetup.jsx';
-import TaxPlanning from './pages/services/TaxPlanning.jsx';
-import TaxPreparation from './pages/services/TaxPreparation.jsx';
-import TaxProblems from './pages/services/TaxProblems.jsx';
-import QuickBooksTraining from './pages/services/QuickBooksTraining.jsx';
+import FinancialStatements from './pages/services/articles/FinancialStatements.jsx';
+import ForensicAccounting from './pages/services/articles/ForensicAccounting.jsx';
+import NewBusinessFormation from './pages/services/articles/NewBusinessFormation.jsx';
+import Payroll from './pages/services/articles/Payroll.jsx';
+import QuickBooksSetup from './pages/services/articles/QuickBooksSetup.jsx';
+import TaxPlanning from './pages/services/articles/TaxPlanning.jsx';
+import TaxPreparation from './pages/services/articles/TaxPreparation.jsx';
+import TaxProblems from './pages/services/articles/TaxProblems.jsx';
+import QuickBooksTraining from './pages/services/articles/QuickBooksTraining.jsx';
 import AboutIndex from './pages/about/AboutIndex.jsx';
 import OurTeam from './pages/about/OurTeam.jsx';
 import OurValues from './pages/about/OurValues.jsx';
 import {Route, Routes} from 'react-router-dom'
 import { Fragment } from "react"
 import './style.css'
-import CfoAdvisory from './pages/services/CfoAdvisory.jsx';
-import NonProfitAccounting from './pages/services/NonProfitAccounting.jsx';
-import TrustAccounting from './pages/services/TrustAccounting.jsx';
+import CfoAdvisory from './pages/services/articles/CfoAdvisory.jsx';
+import NonProfitAccounting from './pages/services/articles/NonProfitAccounting.jsx';
+import TrustAccounting from './pages/services/articles/TrustAccounting.jsx';
 import NotFound from './pages/NotFound.jsx';
-import LogIn from './pages/LogIn.jsx';
-import SignUp from './pages/SignUp.jsx';
+import LogIn from './pages/client-portal/LogIn.jsx';
+import SignUp from './pages/client-portal/SignUp.jsx';
+import ForgotPassword from './pages/client-portal/ForgotPassword.jsx';
 
 function App()
 {
@@ -55,6 +56,7 @@ function App()
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/log-in" element={<LogIn />} />
                     <Route path="/sign-up" element={<SignUp />} />
+                    <Route path="/forgot-password" element={<ForgotPassword />} />
                     <Route path="/*" element={<NotFound />} />
                 </Routes>
             </Fragment>

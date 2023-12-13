@@ -1,7 +1,7 @@
-import NavigationBar from "../components/NavigationBar";
-import logIn from "../assets/log-in.jpg";
-import logIn800 from "../assets/log-in-800w.jpg";
-import Footer from "../components/Footer";
+import NavigationBar from "../../components/NavigationBar";
+import logIn from "../../assets/log-in.jpg";
+import logIn800 from "../../assets/log-in-800w.jpg";
+import Footer from "../../components/Footer";
 
 function SignUp() {
     return (
@@ -34,7 +34,7 @@ function SignUp() {
                             </label>
                             <input type="submit" value="Create Account" />
                         </form>
-                        <div className="log-in-subtext">Already have an account? <a href="/#/log-in" className="create-account-link">Log in.</a></div>
+                        <p>Already have an account? <a href="/#/log-in" className="create-account-link">Log in.</a></p>
                     </div>
                 </div>
                 

@@ -491,7 +491,8 @@ h2:not(.homepage-box-title), h3, h4 {
 }
 
 .form-container {
-  border: .1em solid var(--silver);
+  /* border: .1em solid var(--silver); */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: .5em;
   display: flex;
   flex-direction: column;
@@ -519,8 +520,21 @@ h2:not(.homepage-box-title), h3, h4 {
 
 .log-in-subtext {
   color: var(--gray);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
 }
 
-.create-account-link {
+.log-in-subtext > p {
+  margin: 0;
+}
+
+.forgot-password-link, .create-account-link {
   color: var(--brown-gold)
+}
+
+.form-container > p {
+  color: var(--gray);
 }

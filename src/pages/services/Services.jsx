@@ -1,7 +1,7 @@
-import NavigationBar from "../components/NavigationBar";
-import Footer from "../components/Footer";
-import taxPrep from "../assets/tax-prep-banner.jpg"
-import taxPrep800 from "../assets/tax-prep-banner-800w.jpg"
+import NavigationBar from "../../components/NavigationBar";
+import Footer from "../../components/Footer";
+import taxPrep from "../../assets/tax-prep-banner.jpg"
+import taxPrep800 from "../../assets/tax-prep-banner-800w.jpg"
 import { Outlet } from "react-router-dom";
 
 function Services() {

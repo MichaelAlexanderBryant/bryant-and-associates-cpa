@@ -1,7 +1,7 @@
-import NavigationBar from "../components/NavigationBar";
-import logIn from "../assets/log-in.jpg";
-import logIn800 from "../assets/log-in-800w.jpg";
-import Footer from "../components/Footer";
+import NavigationBar from "../../components/NavigationBar";
+import logIn from "../../assets/log-in.jpg";
+import logIn800 from "../../assets/log-in-800w.jpg";
+import Footer from "../../components/Footer";
 
 function LogIn() {
     return (
@@ -26,7 +26,10 @@ function LogIn() {
                             </label>
                             <input type="submit" value="Log In" />
                         </form>
-                        <div className="log-in-subtext">New to Bryant & Associates CPA? <a href="/#/sign-up" className="create-account-link">Create an account.</a></div>
+                        <div className="log-in-subtext">
+                            <p><a href="/#/forgot-password" className="forgot-password-link">Forgot Your Password?</a></p>
+                            <p>New to Bryant & Associates CPA? <a href="/#/sign-up" className="create-account-link">Create an account.</a></p>
+                        </div>
                     </div>
                 </div>
                 
