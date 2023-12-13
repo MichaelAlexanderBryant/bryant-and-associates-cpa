@@ -1,7 +1,16 @@
 import email from "../assets/email.svg"
 import telephone from "../assets/telephone.svg"
+import PropTypes from 'prop-types'
 
 function NavigationBar({page}) {
+
+    NavigationBar.propTypes = {
+        page: PropTypes.string
+    };
+
+    NavigationBar.defaultProps = {
+        page: "home"
+    };
 
     return (
         <>
