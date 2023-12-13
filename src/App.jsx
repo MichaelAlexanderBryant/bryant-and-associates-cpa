@@ -23,6 +23,7 @@ import CfoAdvisory from './pages/services/CfoAdvisory.jsx';
 import NonProfitAccounting from './pages/services/NonProfitAccounting.jsx';
 import TrustAccounting from './pages/services/TrustAccounting.jsx';
 import NotFound from './pages/NotFound.jsx';
+import LogIn from './pages/LogIn.jsx';
 
 function App()
 {
@@ -51,6 +52,7 @@ function App()
                         <Route path="/services/quickbooks-training" element={<QuickBooksTraining />} />
                     </Route>
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/log-in" element={<LogIn />} />
                     <Route path="/*" element={<NotFound />} />
                 </Routes>
             </Fragment>

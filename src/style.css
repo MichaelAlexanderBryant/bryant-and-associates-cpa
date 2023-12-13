@@ -117,10 +117,23 @@ h2:not(.homepage-box-title), h3, h4 {
   color: white;
 }
 
+.nav-client-portal {
+  background-color: var(--sapphire);
+  color: white;
+
+  padding: .5em;
+  text-align: center;
+}
+
+.nav-client-portal-decoration {
+  text-decoration: none;
+}
+
 .navbar-container > ul {
   display: flex;
   flex-direction: row;
   justify-content: left;
+  align-items: center;
   gap: 2em;
 }
 
