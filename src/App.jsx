@@ -24,6 +24,7 @@ import NonProfitAccounting from './pages/services/NonProfitAccounting.jsx';
 import TrustAccounting from './pages/services/TrustAccounting.jsx';
 import NotFound from './pages/NotFound.jsx';
 import LogIn from './pages/LogIn.jsx';
+import SignUp from './pages/SignUp.jsx';
 
 function App()
 {
@@ -53,6 +54,7 @@ function App()
                     </Route>
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/log-in" element={<LogIn />} />
+                    <Route path="/sign-up" element={<SignUp />} />
                     <Route path="/*" element={<NotFound />} />
                 </Routes>
             </Fragment>

@@ -3,7 +3,7 @@ import logIn from "../assets/log-in.jpg";
 import logIn800 from "../assets/log-in-800w.jpg";
 import Footer from "../components/Footer";
 
-function LogIn() {
+function SignUp() {
     return (
         <>
             <NavigationBar page="log-in"/>
@@ -17,16 +17,24 @@ function LogIn() {
                     <div className="form-container">
                         <form className="log-in-form">
                             <label className="log-in-username">
+                                Your name:
+                                <input type="text" placeholder="First and last"/>
+                            </label>
+                            <label className="log-in-username">
                                 Email:
-                                <input type="email" />
+                                <input type="email"/>
                             </label>
                             <label className="log-in-password">
                                 Password:
                                 <input type="password" />
                             </label>
-                            <input type="submit" value="Log In" />
+                            <label className="log-in-password">
+                                Re-enter Password:
+                                <input type="password" />
+                            </label>
+                            <input type="submit" value="Create Account" />
                         </form>
-                        <div className="log-in-subtext">New to Bryant & Associates CPA? <a href="/#/sign-up" className="create-account-link">Create an account.</a></div>
+                        <div className="log-in-subtext">Already have an account? <a href="/#/log-in" className="create-account-link">Log in.</a></div>
                     </div>
                 </div>
                 
@@ -36,4 +44,4 @@ function LogIn() {
     )
 }
 
-export default LogIn;
+export default SignUp;
