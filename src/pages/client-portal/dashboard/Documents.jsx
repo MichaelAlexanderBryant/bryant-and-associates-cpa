@@ -1,7 +1,7 @@
 function Documents() {
     return (
         <>
-            <h3>Documents</h3>
+            <h2>Documents</h2>
             <p>No documents to show.</p>
         </>
     )

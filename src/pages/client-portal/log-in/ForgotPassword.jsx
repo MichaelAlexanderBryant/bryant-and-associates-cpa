@@ -22,10 +22,9 @@ function ForgotPassword() {
                             </label>
                             <input type="submit" value="Reset Password" />
                         </form>
-                        <p>Nevermind I remember. <a href="/#/log-in" className="create-account-link">Log in.</a></p>
+                        <p><a href="/#/log-in" className="create-account-link">Back to log in.</a></p>
                     </div>
-                </div>
-                
+                </div>  
             </div>
             <Footer/>
         </>

@@ -1,7 +1,7 @@
 function Payment() {
     return (
         <>
-            <h3>Make Payment</h3>
+            <h2>Make Payment</h2>
         </>
     )
 }

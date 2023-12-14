@@ -1,7 +1,7 @@
 function Settings() {
     return (
         <>
-            <h3>Settings</h3>
+            <h2>Settings</h2>
         </>
     )
 }
