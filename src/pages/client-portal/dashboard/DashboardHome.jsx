@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import DashboardNav from "../../../components/DashboardNav";
 
 function DashboardHome() {
@@ -12,6 +13,8 @@ function DashboardHome() {
                         <div><h1 className="bryant-title">Bryant & Associates <span className="cpa-title">CPA</span></h1></div>
                     </a>
                 </div>
+                <h2>Hello, user</h2>
+                <Outlet />
             </div>
         </div>
     )

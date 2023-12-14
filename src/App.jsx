@@ -27,6 +27,11 @@ import LogIn from './pages/client-portal/log-in/LogIn.jsx';
 import SignUp from './pages/client-portal/log-in/SignUp.jsx';
 import ForgotPassword from './pages/client-portal/log-in/ForgotPassword.jsx';
 import DashboardHome from './pages/client-portal/dashboard/DashboardHome.jsx';
+import DashboardIndex from './pages/client-portal/dashboard/DashboardIndex.jsx';
+import Documents from './pages/client-portal/dashboard/Documents.jsx';
+import Payment from './pages/client-portal/dashboard/Payment.jsx';
+import MyProfile from './pages/client-portal/dashboard/MyProfile.jsx';
+import Settings from './pages/client-portal/dashboard/Settings.jsx';
 
 function App()
 {
@@ -58,7 +63,13 @@ function App()
                     <Route path="/log-in" element={<LogIn />} />
                     <Route path="/sign-up" element={<SignUp />} />
                     <Route path="/forgot-password" element={<ForgotPassword />} />
-                    <Route path="/dashboard-home" element={<DashboardHome />} />
+                    <Route path="/dashboard" element={<DashboardHome />} >
+                        <Route index element={<DashboardIndex/>} />
+                        <Route path="/dashboard/documents" element={<Documents />} />
+                        <Route path="/dashboard/payment" element={<Payment />} />
+                        <Route path="/dashboard/profile" element={<MyProfile />} />
+                        <Route path="/dashboard/settings" element={<Settings />} />
+                    </Route>
                     <Route path="/*" element={<NotFound />} />
                 </Routes>
             </Fragment>

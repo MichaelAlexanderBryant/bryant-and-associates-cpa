@@ -555,11 +555,10 @@ h2:not(.homepage-box-title), h3, h4 {
   background-color: var(--sapphire);
   color: white;
   border-right: .25em solid var(--brown-gold);
-
 }
 
 .dashboard-icon {
-  height: 2.5em;
+  height: 1.5em;
   filter: invert(98%) sepia(100%) saturate(7%) hue-rotate(153deg) brightness(103%) contrast(104%);
 }
 
@@ -569,6 +568,13 @@ h2:not(.homepage-box-title), h3, h4 {
   align-items: center;
 
   gap: 1em;
+
+  text-decoration: none;
+}
+
+.dashboard-nav-link {
+  text-decoration: none;
+  color: white;
 }
 
 .dashboard-content {
