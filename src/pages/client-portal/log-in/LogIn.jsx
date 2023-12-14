@@ -1,7 +1,11 @@
-import NavigationBar from "../../components/NavigationBar";
-import logIn from "../../assets/log-in.jpg";
-import logIn800 from "../../assets/log-in-800w.jpg";
-import Footer from "../../components/Footer";
+import NavigationBar from "../../../components/NavigationBar";
+import logIn from "../../../assets/log-in.jpg";
+import logIn800 from "../../../assets/log-in-800w.jpg";
+import Footer from "../../../components/Footer";
+
+function toDashboard() {
+    window.location.href="http://programminghead.com";
+}
 
 function LogIn() {
     return (
@@ -24,11 +28,12 @@ function LogIn() {
                                 Password:
                                 <input type="password" />
                             </label>
-                            <input type="submit" value="Log In" />
+                            <input type="submit" value="Log In"/>
                         </form>
                         <div className="log-in-subtext">
                             <p><a href="/#/forgot-password" className="forgot-password-link">Forgot Your Password?</a></p>
                             <p>New to Bryant & Associates CPA? <a href="/#/sign-up" className="create-account-link">Create an account.</a></p>
+                            <p><a href="/#/dashboard-home" className="create-account-link">Dashboard</a></p>
                         </div>
                     </div>
                 </div>

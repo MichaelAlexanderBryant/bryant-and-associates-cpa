@@ -1,7 +1,7 @@
-import NavigationBar from "../../components/NavigationBar";
-import logIn from "../../assets/log-in.jpg";
-import logIn800 from "../../assets/log-in-800w.jpg";
-import Footer from "../../components/Footer";
+import NavigationBar from "../../../components/NavigationBar";
+import logIn from "../../../assets/log-in.jpg";
+import logIn800 from "../../../assets/log-in-800w.jpg";
+import Footer from "../../../components/Footer";
 
 function ForgotPassword() {
     return (

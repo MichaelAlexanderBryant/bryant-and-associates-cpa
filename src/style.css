@@ -538,3 +538,46 @@ h2:not(.homepage-box-title), h3, h4 {
 .form-container > p {
   color: var(--gray);
 }
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 2fr 9fr;
+  height: 100vh;
+  width: 100%;
+}
+
+.dashboard-content-container {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.dashboard-nav-container {
+  background-color: var(--sapphire);
+  color: white;
+  border-right: .25em solid var(--brown-gold);
+
+}
+
+.dashboard-icon {
+  height: 2.5em;
+  filter: invert(98%) sepia(100%) saturate(7%) hue-rotate(153deg) brightness(103%) contrast(104%);
+}
+
+.flex-align {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 1em;
+}
+
+.dashboard-content {
+  color: black;
+  
+}
+
+.dashboard-nav-list {
+  display:flex;
+  flex-direction: column;
+  gap: 1em;
+}

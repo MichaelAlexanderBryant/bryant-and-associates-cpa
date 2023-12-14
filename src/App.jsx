@@ -23,9 +23,10 @@ import CfoAdvisory from './pages/services/articles/CfoAdvisory.jsx';
 import NonProfitAccounting from './pages/services/articles/NonProfitAccounting.jsx';
 import TrustAccounting from './pages/services/articles/TrustAccounting.jsx';
 import NotFound from './pages/NotFound.jsx';
-import LogIn from './pages/client-portal/LogIn.jsx';
-import SignUp from './pages/client-portal/SignUp.jsx';
-import ForgotPassword from './pages/client-portal/ForgotPassword.jsx';
+import LogIn from './pages/client-portal/log-in/LogIn.jsx';
+import SignUp from './pages/client-portal/log-in/SignUp.jsx';
+import ForgotPassword from './pages/client-portal/log-in/ForgotPassword.jsx';
+import DashboardHome from './pages/client-portal/dashboard/DashboardHome.jsx';
 
 function App()
 {
@@ -57,6 +58,7 @@ function App()
                     <Route path="/log-in" element={<LogIn />} />
                     <Route path="/sign-up" element={<SignUp />} />
                     <Route path="/forgot-password" element={<ForgotPassword />} />
+                    <Route path="/dashboard-home" element={<DashboardHome />} />
                     <Route path="/*" element={<NotFound />} />
                 </Routes>
             </Fragment>
