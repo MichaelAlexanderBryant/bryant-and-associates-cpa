@@ -1,5 +1,7 @@
 :root {
   --sapphire: #0d3c56;
+  --dark-sapphire: #0a3045;
+  --darker-sapphire: #082536;
   --dim-gray: #666666;
   --white: #FFFFFF;
   --persian-green: #36A793;
@@ -123,6 +125,25 @@ h2:not(.homepage-box-title), h3, h4 {
 
   padding: .5em;
   text-align: center;
+
+  border: .1em solid var(--sapphire);
+}
+
+.nav-client-portal:hover {
+  background-color: white;
+  transition: background 250ms ease-in;
+  color: var(--brown-gold);
+  transition: color 250ms ease-in;
+}
+
+.nav-client-portal-active {
+  background-color: white;
+  color: var(--brown-gold);
+
+  padding: .5em;
+  text-align: center;
+  
+  border: .1em solid var(--sapphire);
 }
 
 .nav-client-portal-decoration {
@@ -186,6 +207,7 @@ h2:not(.homepage-box-title), h3, h4 {
 
 .navbar-item > a:hover {
   color: var(--brown-gold);
+  transition: color 250ms ease-in;
 }
 
 .navbar-item > a.active-page {
@@ -577,7 +599,7 @@ h2:not(.homepage-box-title), h3, h4 {
 
 .dashboard-title {
   
-  padding-left:3em;
+  padding-left: 3em;
 }
 
 .dashboard-nav-container {
@@ -585,6 +607,10 @@ h2:not(.homepage-box-title), h3, h4 {
   color: white;
   border-right: .25em solid var(--brown-gold);
   height: auto;
+
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .dashboard-icon {
@@ -601,6 +627,7 @@ h2:not(.homepage-box-title), h3, h4 {
   gap: 1em;
 
   text-decoration: none;
+
 }
 
 .dashboard-nav-link {
@@ -616,10 +643,28 @@ h2:not(.homepage-box-title), h3, h4 {
 .dashboard-nav-list {
   display:flex;
   flex-direction: column;
-  gap: 1em;
   padding-top: 1em;
+
+  gap: .5em;
 }
 
+.dashboard-nav-item {
+  padding: .5em;
+}
+
+.dashboard-nav-item:hover {
+  background-color: var(--dark-sapphire);
+  
+}
+
+.dashboard-nav-item:active {
+  background-color: var(--darker-sapphire);
+}
+
+.dashboard-active-page {
+  padding: .5em;
+  background-color: var(--darker-sapphire);
+}
 
 .dashboard-home-content-container {
   display: flex;
