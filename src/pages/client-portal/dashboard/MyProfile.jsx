@@ -2,7 +2,7 @@ function MyProfile() {
     return (
         <>
             <h2>My Profile</h2>
-            <button>Edit</button>
+            <button className="dashboard-edit-button">Edit</button>
             <p>First name:</p>
             <p>Last name:</p>
             <p>Email:</p>

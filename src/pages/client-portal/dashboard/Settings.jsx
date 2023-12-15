@@ -2,7 +2,7 @@ function Settings() {
     return (
         <>
             <h2>Settings</h2>
-            <button>Edit</button>
+            <button className="dashboard-edit-button">Edit</button>
             <p>Time zone:</p>
         </>
     )

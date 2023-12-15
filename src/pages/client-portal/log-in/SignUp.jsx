@@ -36,7 +36,7 @@ function SignUp() {
                                 Re-enter Password:
                                 <input type="password" />
                             </label>
-                            <input type="submit" value="Create Account" />
+                            <input type="submit" value="Create Account" className="create-account-button" />
                         </form>
                         <p>Already have an account? <a href="/#/log-in" className="create-account-link">Log in.</a></p>
                     </div>

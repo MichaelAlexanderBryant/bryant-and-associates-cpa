@@ -58,9 +58,9 @@ function Payment() {
                     <label htmlFor="amount">
                         Amount:
                     </label>
-                    <input type="number" min="0.00" step="0.01" pattern="([0-9][0-9][0-9][0-9][0-9].[0-9][0-9])" id="amount"/>
+                    <input type="number" min="0.00" step="0.01" pattern="([0-9][0-9][0-9][0-9][0-9].[0-9][0-9])" id="amount" />
                 </div>
-                <input type="submit" value="Proceed to Confirmation" />
+                <input type="submit" value="Proceed to Confirmation" className="payment-confirmation-button"/>
             </form>
         </>
     )

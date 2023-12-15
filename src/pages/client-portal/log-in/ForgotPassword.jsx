@@ -20,7 +20,7 @@ function ForgotPassword() {
                                 Email:
                                 <input type="email"/>
                             </label>
-                            <input type="submit" value="Reset Password" />
+                            <input type="submit" value="Reset Password" className="reset-password-button"/>
                         </form>
                         <p><a href="/#/log-in" className="create-account-link">Back to log in.</a></p>
                     </div>

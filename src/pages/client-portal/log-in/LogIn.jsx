@@ -28,7 +28,7 @@ function LogIn() {
                                 Password:
                                 <input type="password" />
                             </label>
-                            <input type="submit" value="Log In"/>
+                            <input type="submit" value="Log In" className="log-in-button"/>
                         </form>
                         <div className="log-in-subtext">
                             <p><a href="/#/forgot-password" className="forgot-password-link">Forgot Your Password?</a></p>
