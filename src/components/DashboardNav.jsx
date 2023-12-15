@@ -1,6 +1,7 @@
 import home from "../assets/home.svg"
 import documents from "../assets/documents.svg"
 import payment from "../assets/payment.svg"
+import paymentHistory from "../assets/payment-history.svg"
 import profile from "../assets/profile.svg"
 import settings from "../assets/settings.svg"
 import logOut from "../assets/log-out.svg"
@@ -29,6 +30,13 @@ function DashboardNav() {
                     <a href="/#/dashboard/payment" className="dashboard-nav-link">
                         <div className="flex-align">
                             <img src={payment} className="dashboard-icon"/><span className="">Make Payment</span>
+                        </div>
+                    </a>
+                </li>
+                <li className="no-bullet-indent ">
+                    <a href="/#/dashboard/payment-history" className="dashboard-nav-link">
+                        <div className="flex-align">
+                            <img src={paymentHistory} className="dashboard-icon"/><span className="">Payment History</span>
                         </div>
                     </a>
                 </li>

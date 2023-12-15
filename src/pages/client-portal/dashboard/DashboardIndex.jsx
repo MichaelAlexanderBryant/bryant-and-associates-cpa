@@ -10,7 +10,7 @@ function DashboardIndex() {
                 <div className="recent-payments-container">
                     <h2>Recent Payments</h2>
                     <p>No recent payments.</p>
-                    <p><a href="/#/dashboard/payment" className="dashboard-index-link">View more payments</a></p>
+                    <p><a href="/#/dashboard/payment-history" className="dashboard-index-link">View more payments</a></p>
                 </div>
             </div>
 

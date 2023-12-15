@@ -17,8 +17,12 @@ function SignUp() {
                     <div className="form-container">
                         <form className="log-in-form">
                             <label className="log-in-username">
-                                Your name:
-                                <input type="text" placeholder="First and last"/>
+                                First name:
+                                <input type="text" />
+                            </label>
+                            <label className="log-in-username">
+                                Last name:
+                                <input type="text" />
                             </label>
                             <label className="log-in-username">
                                 Email:

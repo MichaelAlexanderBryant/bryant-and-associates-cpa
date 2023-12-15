@@ -32,6 +32,7 @@ import Documents from './pages/client-portal/dashboard/Documents.jsx';
 import Payment from './pages/client-portal/dashboard/Payment.jsx';
 import MyProfile from './pages/client-portal/dashboard/MyProfile.jsx';
 import Settings from './pages/client-portal/dashboard/Settings.jsx';
+import PaymentHistory from './pages/client-portal/dashboard/PaymentHistory.jsx';
 
 function App()
 {
@@ -67,6 +68,7 @@ function App()
                         <Route index element={<DashboardIndex/>} />
                         <Route path="/dashboard/documents" element={<Documents />} />
                         <Route path="/dashboard/payment" element={<Payment />} />
+                        <Route path="/dashboard/payment-history" element={<PaymentHistory />} />
                         <Route path="/dashboard/profile" element={<MyProfile />} />
                         <Route path="/dashboard/settings" element={<Settings />} />
                     </Route>

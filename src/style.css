@@ -541,7 +541,7 @@ h2:not(.homepage-box-title), h3, h4 {
 
 .dashboard-grid-rows {
   display:grid;
-  grid-template-rows: 1fr 10fr;
+  grid-template-rows: 1fr 9fr;
   height: 100vh;
 }
 
@@ -559,7 +559,7 @@ h2:not(.homepage-box-title), h3, h4 {
 }
 
 .dashboard-title {
-  border-bottom: .11em solid var(--silver);
+  
   padding-left:3em;
 }
 
@@ -573,6 +573,7 @@ h2:not(.homepage-box-title), h3, h4 {
 .dashboard-icon {
   height: 1.5em;
   filter: invert(98%) sepia(100%) saturate(7%) hue-rotate(153deg) brightness(103%) contrast(104%);
+  fill:none;
 }
 
 .flex-align {
@@ -592,7 +593,7 @@ h2:not(.homepage-box-title), h3, h4 {
 
 .dashboard-content {
   color: black;
-  
+  border-bottom: .11em solid var(--silver);
 }
 
 .dashboard-nav-list {
@@ -608,9 +609,27 @@ h2:not(.homepage-box-title), h3, h4 {
   flex-direction: column;
 
   gap: 1em;
-  
 }
 
-.dashboard-index-link {
+.dashboard-index-link, .dashboard-profile-link {
   color: var(--brown-gold);
+}
+
+.credit-cards {
+  width: 18em;
+  margin: 0;
+  padding-bottom: 1em;
+}
+
+.payment-form {
+  display:flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: flex-start;
+}
+
+.form-item {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
