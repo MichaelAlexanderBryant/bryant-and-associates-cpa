@@ -34,46 +34,53 @@ import MyProfile from './pages/client-portal/dashboard/MyProfile.jsx';
 import Settings from './pages/client-portal/dashboard/Settings.jsx';
 import PaymentHistory from './pages/client-portal/dashboard/PaymentHistory.jsx';
 
+import PrivateRoute from './utils/PrivateRoute.jsx';
+import { AuthProvider } from './context/AuthContext.jsx';
+
 function App()
 {
   return <Fragment>
-                <Routes>
-                    <Route path="/" element= {<Home />} />
-                    <Route path="/about" element= {<About />} >
-                        <Route index element={<AboutIndex />} />
-                        <Route path="/about/our-values" element={<OurValues />} />
-                        <Route path="/about/our-team" element={<OurTeam />} />
-                    </Route>
-                    <Route path="/services" element= {<Services />} >
-                        <Route index element={<ServicesIndex />} />
-                        <Route path="/services/bookkeeping" element={<Bookkeeping />} />
-                        <Route path="/services/business-and-cfo-advisory" element={<CfoAdvisory />} />
-                        <Route path="/services/financial-statements" element={<FinancialStatements />} />
-                        <Route path="/services/litigation-support-and-forensic-accounting" element={<ForensicAccounting />} />
-                        <Route path="/services/new-business-formation" element={<NewBusinessFormation />} />
-                        <Route path="/services/non-profit-accounting" element={<NonProfitAccounting />} />
-                        <Route path="/services/payroll" element={<Payroll />} />
-                        <Route path="/services/quickbooks-setup" element={<QuickBooksSetup />} />
-                        <Route path="/services/tax-planning" element={<TaxPlanning />} />
-                        <Route path="/services/tax-preparation" element={<TaxPreparation />} />
-                        <Route path="/services/tax-problems" element={<TaxProblems />} />
-                        <Route path="/services/trust-accounting" element={<TrustAccounting />} />
-                        <Route path="/services/quickbooks-training" element={<QuickBooksTraining />} />
-                    </Route>
-                    <Route path="/contact" element={<Contact />} />
-                    <Route path="/log-in" element={<LogIn />} />
-                    <Route path="/sign-up" element={<SignUp />} />
-                    <Route path="/forgot-password" element={<ForgotPassword />} />
-                    <Route path="/dashboard" element={<DashboardHome />} >
-                        <Route index element={<DashboardIndex/>} />
-                        <Route path="/dashboard/documents" element={<Documents />} />
-                        <Route path="/dashboard/payment" element={<Payment />} />
-                        <Route path="/dashboard/payment-history" element={<PaymentHistory />} />
-                        <Route path="/dashboard/profile" element={<MyProfile />} />
-                        <Route path="/dashboard/settings" element={<Settings />} />
-                    </Route>
-                    <Route path="/*" element={<NotFound />} />
-                </Routes>
+                <AuthProvider>
+                    <Routes>
+                        <Route path="/" element= {<Home />} />
+                        <Route path="/about" element= {<About />} >
+                            <Route index element={<AboutIndex />} />
+                            <Route path="/about/our-values" element={<OurValues />} />
+                            <Route path="/about/our-team" element={<OurTeam />} />
+                        </Route>
+                        <Route path="/services" element= {<Services />} >
+                            <Route index element={<ServicesIndex />} />
+                            <Route path="/services/bookkeeping" element={<Bookkeeping />} />
+                            <Route path="/services/business-and-cfo-advisory" element={<CfoAdvisory />} />
+                            <Route path="/services/financial-statements" element={<FinancialStatements />} />
+                            <Route path="/services/litigation-support-and-forensic-accounting" element={<ForensicAccounting />} />
+                            <Route path="/services/new-business-formation" element={<NewBusinessFormation />} />
+                            <Route path="/services/non-profit-accounting" element={<NonProfitAccounting />} />
+                            <Route path="/services/payroll" element={<Payroll />} />
+                            <Route path="/services/quickbooks-setup" element={<QuickBooksSetup />} />
+                            <Route path="/services/tax-planning" element={<TaxPlanning />} />
+                            <Route path="/services/tax-preparation" element={<TaxPreparation />} />
+                            <Route path="/services/tax-problems" element={<TaxProblems />} />
+                            <Route path="/services/trust-accounting" element={<TrustAccounting />} />
+                            <Route path="/services/quickbooks-training" element={<QuickBooksTraining />} />
+                        </Route>
+                        <Route path="/contact" element={<Contact />} />
+                        <Route path="/log-in" element={<LogIn />} />
+                        <Route path="/sign-up" element={<SignUp />} />
+                        <Route path="/forgot-password" element={<ForgotPassword />} />
+                        <Route path="/dashboard" element={<PrivateRoute/>}>
+                            <Route path="/dashboard" element={<DashboardHome />} >
+                                <Route index element={<DashboardIndex/>} />
+                                <Route path="/dashboard/documents" element={<Documents />} />
+                                <Route path="/dashboard/payment" element={<Payment />} />
+                                <Route path="/dashboard/payment-history" element={<PaymentHistory />} />
+                                <Route path="/dashboard/profile" element={<MyProfile />} />
+                                <Route path="/dashboard/settings" element={<Settings />} />
+                            </Route>
+                        </Route>
+                        <Route path="/*" element={<NotFound />} />
+                    </Routes>
+                </AuthProvider>
             </Fragment>
         
 }

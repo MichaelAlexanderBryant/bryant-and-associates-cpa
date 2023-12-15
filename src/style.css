@@ -10,7 +10,9 @@
   --gray: #6d6d6d;
   --brown-red: #af3330;
   --brown-yellow: #c9a54a;
+  --darker-brown-yellow: #8f7535;
   --pea-green: #8d9b43;
+  --darker-pea-green: #555e29;
 }
 
 
@@ -133,8 +135,11 @@ h2:not(.homepage-box-title), h3, h4 {
 
 .nav-client-portal:hover {
   background-color: white;
-  
   color: var(--brown-gold);
+}
+
+.nav-client-portal:active {
+  background-color: var(--silver);
   
 }
 
@@ -210,6 +215,11 @@ h2:not(.homepage-box-title), h3, h4 {
 
 .navbar-item > a:hover {
   color: var(--brown-gold);
+  
+}
+
+.navbar-item > a:active {
+  color: var(--darker-brown-gold);
   
 }
 
@@ -346,12 +356,24 @@ h2:not(.homepage-box-title), h3, h4 {
   background-color: var(--sapphire);
 }
 
+.homepage-box1:active {
+  background-color: var(--darker-sapphire);
+}
+
 .homepage-box2:hover {
   background-color: var(--brown-yellow);
 }
 
+.homepage-box2:active {
+  background-color: var(--darker-brown-yellow);
+}
+
 .homepage-box3:hover {
   background-color: var(--pea-green);
+}
+
+.homepage-box3:active {
+  background-color: var(--darker-pea-green);
 }
 
 .homepage-box1:hover .box-icon, .homepage-box2:hover .box-icon, .homepage-box3:hover .box-icon {

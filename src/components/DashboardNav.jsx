@@ -5,12 +5,16 @@ import paymentHistory from "../assets/payment-history.svg"
 import profile from "../assets/profile.svg"
 import settings from "../assets/settings.svg"
 import logOut from "../assets/log-out.svg"
-import { useState } from "react"
+import { useContext, useState } from "react"
 import { useLocation } from "react-router-dom"
+import AuthContext from "../context/AuthContext"
 
 function DashboardNav() {
 
     let location = useLocation();
+
+
+    let {logOutUser} = useContext(AuthContext);
 
     return (
         <div className="dashboard-nav-container">
@@ -59,7 +63,7 @@ function DashboardNav() {
                 </li>
                 <li className="no-bullet-indent">
                     <a href="/#/log-in" className="dashboard-nav-link">
-                        <div className="flex-align dashboard-nav-item">
+                        <div className="flex-align dashboard-nav-item" onClick={logOutUser}>
                             <img src={logOut} className="dashboard-icon"/><span className="">Log Out</span>
                         </div>
                     </a>

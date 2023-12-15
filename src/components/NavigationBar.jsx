@@ -1,6 +1,8 @@
+import { useContext, useEffect } from "react";
 import email from "../assets/email.svg"
 import telephone from "../assets/telephone.svg"
 import PropTypes from 'prop-types'
+import AuthContext from "../context/AuthContext";
 
 function NavigationBar({page}) {
 
