@@ -127,13 +127,15 @@ h2:not(.homepage-box-title), h3, h4 {
   text-align: center;
 
   border: .1em solid var(--sapphire);
+
+  transition: all 250ms ease;
 }
 
 .nav-client-portal:hover {
   background-color: white;
-  transition: background 250ms ease-in;
+  
   color: var(--brown-gold);
-  transition: color 250ms ease-in;
+  
 }
 
 .nav-client-portal-active {
@@ -203,11 +205,12 @@ h2:not(.homepage-box-title), h3, h4 {
 .navbar-item > a {
   color: var(--sapphire);
   text-decoration: none;
+  transition: color 250ms ease;
 }
 
 .navbar-item > a:hover {
   color: var(--brown-gold);
-  transition: color 250ms ease-in;
+  
 }
 
 .navbar-item > a.active-page {
@@ -327,6 +330,7 @@ h2:not(.homepage-box-title), h3, h4 {
   text-align: center;
   padding: 4em 2em;
   min-height: 15em;
+  transition: all 250ms ease;
 }
 
 .box-icon {
@@ -335,7 +339,7 @@ h2:not(.homepage-box-title), h3, h4 {
 
 .homepage-box1:hover, .homepage-box2:hover, .homepage-box3:hover {
   color: white;
-  transition: background 250ms ease-in;
+  
 }
 
 .homepage-box1:hover {
