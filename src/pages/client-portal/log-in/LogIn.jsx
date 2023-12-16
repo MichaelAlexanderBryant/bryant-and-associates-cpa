@@ -23,7 +23,7 @@ function LogIn() {
                         <form className="log-in-form" onSubmit={logInUser}>
                             <label className="log-in-username">
                                 Email:
-                                <input type="text" name="email"/>
+                                <input type="email" name="email"/>
                             </label>
                             <label className="log-in-password">
                                 Password:
@@ -34,7 +34,6 @@ function LogIn() {
                         <div className="log-in-subtext">
                             <p><a href="/#/forgot-password" className="forgot-password-link">Forgot Your Password?</a></p>
                             <p>New to Bryant & Associates CPA? <a href="/#/sign-up" className="create-account-link">Create an account.</a></p>
-                            {/* <p><a href="/#/dashboard" className="create-account-link">Dashboard</a></p> */}
                         </div>
                     </div>
                 </div>
