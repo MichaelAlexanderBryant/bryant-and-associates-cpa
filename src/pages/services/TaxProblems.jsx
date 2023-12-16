@@ -3,7 +3,7 @@ function TaxProblems() {
         <div>
             <p><a href="/#/services" className="services-item">&lt; Back to Services</a></p>
             <h1>Tax Problems</h1>
-            <p>Are you having problems with the IRS?</p>
+            <p>We can help you with IRS garnishments, IRS liens, and IRS and FTB audits.</p>
             <p>We're here to help you resolve your tax problems and put an end to the misery that the IRS can put you through. We pride ourselves on being very efficient, affordable, and of course, extremely discrete. The IRS problems will not just go away by themselves; they just keep getting worse with penalties and interest being added each day.</p>
             <p>If you owe the IRS, you have a very serious problem. It may take the IRS several years to catch up to you, but they're relentless and have no mercy in collecting all the money that is owed. When the collection process starts, they'll make your life miserable and literally ruin all aspects of your life.</p>
             <p>Please take a look through our complete IRS problem resolution services by clicking on the links below.</p>
@@ -26,7 +26,6 @@ function TaxProblems() {
                 <li>Get out of a tax debt caused by misdeeds committed by your spouse.</li>
                 <li>See what the IRS has on you.</li>
             </ul>
-            <p>We can help you with IRS garnishments, IRS liens, and IRS and FTB audits.</p>
             <p>Get a consultation with our tax specialist by giving us a call.</p>
         </div>
     )

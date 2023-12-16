@@ -18,8 +18,11 @@ function ServicesIndex() {
                 <div className="tax-services">
                     <h2>Tax Services</h2>
                     <ul className="no-bullet-indent services-list">
-                        <li><a className="services-item" href="/#/services/tax-preparation">Tax Preparation</a></li>
-                        <li><a className="services-item" href="/#/services/tax-planning">Tax Planning</a></li>
+                        <li><a className="services-item" href="/#/services/individual-taxes">Individual Taxes</a></li>
+                        <li><a className="services-item" href="/#/services/business-taxes">Business Taxes</a></li>
+                        <li><a className="services-item" href="/#/services/nonprofit-taxes">Nonprofit Taxes</a></li>
+                        <li><a className="services-item" href="/#/services/hoa-taxes">HOA Taxes</a></li>
+                        <li><a className="services-item" href="/#/services/trust-taxes">Trust Taxes</a></li>
                         <li><a className="services-item" href="/#/services/tax-problems">Tax Problems</a></li>
                     </ul>
                 </div>
@@ -27,7 +30,7 @@ function ServicesIndex() {
                     <h2>Other Services</h2>
                     <ul className="no-bullet-indent services-list">
                         <li><a className="services-item" href="/#/services/litigation-support-and-forensic-accounting">Litigation Support & Forensic Accounting</a></li>
-                        <li><a className="services-item" href="/#/services/non-profit-accounting">Non-Profit Accounting</a></li>
+                        <li><a className="services-item" href="/#/services/nonprofit-accounting">Nonprofit Accounting</a></li>
                         <li><a className="services-item" href="/#/services/trust-accounting">Trust Accounting</a></li>
                     </ul>
                 </div>
