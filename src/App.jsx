@@ -36,6 +36,7 @@ import PaymentHistory from './pages/client-portal/dashboard/PaymentHistory.jsx';
 
 import PrivateRoute from './utils/PrivateRoute.jsx';
 import { AuthProvider } from './context/AuthContext.jsx';
+import ResetPassword from './pages/client-portal/log-in/ResetPassword.jsx';
 
 function App()
 {
@@ -68,6 +69,7 @@ function App()
                         <Route path="/log-in" element={<LogIn />} />
                         <Route path="/sign-up" element={<SignUp />} />
                         <Route path="/forgot-password" element={<ForgotPassword />} />
+                        <Route path="/reset-password/:uid/:token" element={<ResetPassword />} />
                         <Route path="/dashboard" element={<PrivateRoute/>}>
                             <Route path="/dashboard" element={<DashboardHome />} >
                                 <Route index element={<DashboardIndex/>} />
