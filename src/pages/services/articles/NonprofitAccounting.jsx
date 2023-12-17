@@ -1,4 +1,4 @@
-function NonProfitAccounting() {
+function NonprofitAccounting() {
     return (
         <div>
             <p><a href="/#/services" className="services-item">&lt; Back to Services</a></p>
@@ -28,4 +28,4 @@ function NonProfitAccounting() {
     )
 }
 
-export default NonProfitAccounting;
+export default NonprofitAccounting;

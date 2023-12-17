@@ -2,6 +2,8 @@
   --sapphire: #0d3c56;
   --dark-sapphire: #0a3045;
   --darker-sapphire: #082536;
+  --light-sapphire: #115073;
+  --lighter-sapphire: #176996;
   --dim-gray: #666666;
   --white: #FFFFFF;
   --persian-green: #36A793;
@@ -132,6 +134,7 @@ h2:not(.homepage-box-title), h3, h4 {
   border: .1em solid var(--sapphire);
 
   transition: all 250ms ease;
+  white-space:nowrap
 }
 
 .nav-client-portal:hover {
@@ -175,10 +178,8 @@ h2:not(.homepage-box-title), h3, h4 {
 @media (max-width: 365px) {
 
   .navbar-container > ul {
-    display: flex;
     flex-direction: column;
     justify-content: left;
-    gap: 2em;
   }
 
 }
@@ -437,6 +438,7 @@ h2:not(.homepage-box-title), h3, h4 {
 
 .services-item, .about-item {
   color: var(--brown-gold);
+  transition: all 250ms ease;
 }
 
 .services-item:hover, .about-item:hover {
@@ -485,6 +487,12 @@ h2:not(.homepage-box-title), h3, h4 {
 
 .contact-email-telephone {
   color: var(--brown-gold);
+  transition: all 250ms ease;
+}
+
+.contact-email-telephone:hover {
+  color: var(--sapphire);
+  text-decoration: none;
 }
 
 .g-map {
@@ -537,6 +545,10 @@ h2:not(.homepage-box-title), h3, h4 {
   gap: 1em;
 }
 
+.sign-up-subtext {
+  text-align: center;
+}
+
 .log-in-form {
   display:flex;
   flex-direction: column;
@@ -546,7 +558,6 @@ h2:not(.homepage-box-title), h3, h4 {
 }
 
 .form-container {
-  /* border: .1em solid var(--silver); */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: .5em;
   display: flex;
@@ -588,6 +599,15 @@ h2:not(.homepage-box-title), h3, h4 {
   background-color: var(--sapphire);
   color: white;
   padding: .5em;
+  transition: all 250ms ease;
+}
+
+.log-in-button:hover, .reset-password-button:hover, .create-account-button:hover  {
+  background-color: var(--light-sapphire);
+}
+
+.log-in-button:active, .reset-password-button:active, .create-account-button:active  {
+  background-color: var(--lighter-sapphire);
 }
 
 .log-in-subtext {
@@ -604,7 +624,13 @@ h2:not(.homepage-box-title), h3, h4 {
 }
 
 .forgot-password-link, .create-account-link {
-  color: var(--brown-gold)
+  color: var(--brown-gold);
+  transition: all 250ms ease;
+}
+
+.forgot-password-link:hover, .create-account-link:hover {
+  color: var(--sapphire);
+  text-decoration: none;
 }
 
 .form-container > p {
@@ -708,6 +734,12 @@ h2:not(.homepage-box-title), h3, h4 {
 
 .dashboard-index-link, .dashboard-profile-link {
   color: var(--brown-gold);
+  transition: all 250ms ease;
+}
+
+.dashboard-index-link:hover, .dashboard-profile-link:hover {
+  color: var(--sapphire);
+  text-decoration: none;
 }
 
 .credit-cards {
@@ -744,4 +776,13 @@ h2:not(.homepage-box-title), h3, h4 {
   background-color: var(--sapphire);
   color: white;
   padding: .5em;
+  transition: all 250ms ease;
+}
+
+.payment-confirmation-button:hover, .dashboard-edit-button:hover  {
+  background-color: var(--light-sapphire);
+}
+
+.payment-confirmation-button:active, .dashboard-edit-button:active  {
+  background-color: var(--lighter-sapphire);
 }

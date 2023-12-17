@@ -20,7 +20,7 @@ import {Route, Routes} from 'react-router-dom'
 import { Fragment } from "react"
 import './style.css'
 import CfoAdvisory from './pages/services/articles/CfoAdvisory.jsx';
-import NonProfitAccounting from './pages/services/articles/NonProfitAccounting.jsx';
+import NonprofitAccounting from './pages/services/articles/NonprofitAccounting.jsx';
 import TrustAccounting from './pages/services/articles/TrustAccounting.jsx';
 import NotFound from './pages/NotFound.jsx';
 import LogIn from './pages/client-portal/log-in/LogIn.jsx';
@@ -56,7 +56,7 @@ function App()
                             <Route path="/services/financial-statements" element={<FinancialStatements />} />
                             <Route path="/services/litigation-support-and-forensic-accounting" element={<ForensicAccounting />} />
                             <Route path="/services/new-business-formation" element={<NewBusinessFormation />} />
-                            <Route path="/services/non-profit-accounting" element={<NonProfitAccounting />} />
+                            <Route path="/services/non-profit-accounting" element={<NonprofitAccounting />} />
                             <Route path="/services/payroll" element={<Payroll />} />
                             <Route path="/services/quickbooks-setup" element={<QuickBooksSetup />} />
                             <Route path="/services/tax-planning" element={<TaxPlanning />} />
