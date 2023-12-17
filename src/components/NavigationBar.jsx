@@ -1,6 +1,8 @@
+import { useContext, useEffect } from "react";
 import email from "../assets/email.svg"
 import telephone from "../assets/telephone.svg"
 import PropTypes from 'prop-types'
+import AuthContext from "../context/AuthContext";
 
 function NavigationBar({page}) {
 
@@ -38,6 +40,7 @@ function NavigationBar({page}) {
                                 <li className="navbar-item"><a href="/#/services">Services</a></li>
                                 <li className="navbar-item"><a href="/#/about">About</a></li>
                                 <li className="navbar-item"><a href="/#/contact">Contact</a></li>
+                                <li><a href="/#/log-in" className="nav-client-portal-decoration"><div className="nav-client-portal">Client Portal</div></a></li>
                             </ul> :
 
                             page == "about" ?
@@ -47,6 +50,7 @@ function NavigationBar({page}) {
                                 <li className="navbar-item"><a href="/#/services" className="active-page">Services</a></li>
                                 <li className="navbar-item"><a href="/#/about">About</a></li>
                                 <li className="navbar-item"><a href="/#/contact">Contact</a></li>
+                                <li><a href="/#/log-in" className="nav-client-portal-decoration"><div className="nav-client-portal">Client Portal</div></a></li>
                             </ul> :
 
                             page == "services" ?
@@ -56,14 +60,28 @@ function NavigationBar({page}) {
                                 <li className="navbar-item"><a href="/#/services">Services</a></li>
                                 <li className="navbar-item"><a href="/#/about" className="active-page">About</a></li>
                                 <li className="navbar-item"><a href="/#/contact">Contact</a></li>
+                                <li><a href="/#/log-in" className="nav-client-portal-decoration"><div className="nav-client-portal">Client Portal</div></a></li>
                             </ul> :
+
+                            page == "contact" ?
 
                             <ul className="no-bullet-indent">
                                 <li className="navbar-item"><a href="/#">Home</a></li>
                                 <li className="navbar-item"><a href="/#/services">Services</a></li>
                                 <li className="navbar-item"><a href="/#/about">About</a></li>
                                 <li className="navbar-item"><a href="/#/contact" className="active-page">Contact</a></li>
+                                <li><a href="/#/log-in" className="nav-client-portal-decoration"><div className="nav-client-portal">Client Portal</div></a></li>
+                            </ul> : 
+
+                            <ul className="no-bullet-indent">
+                                <li className="navbar-item"><a href="/#">Home</a></li>
+                                <li className="navbar-item"><a href="/#/about">About</a></li>
+                                <li className="navbar-item"><a href="/#/services">Services</a></li>
+                                <li className="navbar-item"><a href="/#/contact">Contact</a></li>
+                                <li><a href="/#/log-in" className="nav-client-portal-decoration"><div className="nav-client-portal-active">Client Portal</div></a></li>
                             </ul>
+
+
                         }
                 </div>
             </div>

@@ -1,7 +1,7 @@
-import NavigationBar from "../components/NavigationBar";
-import Footer from "../components/Footer";
-import contactUs from "../assets/contact-banner.jpg"
-import contactUs800 from "../assets/contact-banner-800w.jpg"
+import NavigationBar from "../../components/NavigationBar";
+import Footer from "../../components/Footer";
+import contactUs from "../../assets/contact-banner.jpg"
+import contactUs800 from "../../assets/contact-banner-800w.jpg"
 
 function Contact() {
     return (

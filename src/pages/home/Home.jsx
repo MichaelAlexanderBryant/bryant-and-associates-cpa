@@ -1,10 +1,10 @@
-import NavigationBar from "../components/NavigationBar";
-import Footer from "../components/Footer";
-import helpImage from "../assets/home-page-banner.jpg"
-import helpImage800 from "../assets/home-page-banner-800w.jpg"
-import knowUs from "../assets/know-us.svg"
-import help from "../assets/get-help.svg"
-import contactUs from "../assets/contact.svg"
+import NavigationBar from "../../components/NavigationBar";
+import Footer from "../../components/Footer";
+import helpImage from "../../assets/home-page-banner.jpg"
+import helpImage800 from "../../assets/home-page-banner-800w.jpg"
+import knowUs from "../../assets/know-us.svg"
+import help from "../../assets/get-help.svg"
+import contactUs from "../../assets/contact.svg"
 
 function Home() {
     return (

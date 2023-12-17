@@ -1,7 +1,7 @@
-import NavigationBar from "../components/NavigationBar";
-import Footer from "../components/Footer";
-import personCalc from "../assets/person-calc-banner.jpg"
-import personCalc800 from "../assets/person-calc-banner-800w.jpg"
+import NavigationBar from "../../components/NavigationBar";
+import Footer from "../../components/Footer";
+import personCalc from "../../assets/person-calc-banner.jpg"
+import personCalc800 from "../../assets/person-calc-banner-800w.jpg"
 import { Outlet } from "react-router-dom";
 
 function About() {

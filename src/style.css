@@ -1,5 +1,9 @@
 :root {
   --sapphire: #0d3c56;
+  --dark-sapphire: #0a3045;
+  --darker-sapphire: #082536;
+  --light-sapphire: #115073;
+  --lighter-sapphire: #176996;
   --dim-gray: #666666;
   --white: #FFFFFF;
   --persian-green: #36A793;
@@ -8,7 +12,9 @@
   --gray: #6d6d6d;
   --brown-red: #af3330;
   --brown-yellow: #c9a54a;
+  --darker-brown-yellow: #8f7535;
   --pea-green: #8d9b43;
+  --darker-pea-green: #555e29;
 }
 
 
@@ -75,6 +81,7 @@ h2:not(.homepage-box-title), h3, h4 {
 
 .bryant-title {
   color: black;
+  font-size: 2em;
 }
 
 .cpa-title {
@@ -117,20 +124,62 @@ h2:not(.homepage-box-title), h3, h4 {
   color: white;
 }
 
+.nav-client-portal {
+  background-color: var(--sapphire);
+  color: white;
+
+  padding: .5em;
+  text-align: center;
+
+  border: .1em solid var(--sapphire);
+
+  transition: all 250ms ease;
+  white-space:nowrap
+}
+
+.nav-client-portal:hover {
+  background-color: white;
+  color: var(--brown-gold);
+}
+
+.nav-client-portal:active {
+  background-color: var(--silver);
+  
+}
+
+.nav-client-portal-active {
+  background-color: white;
+  color: var(--brown-gold);
+
+  padding: .5em;
+  text-align: center;
+  
+  border: .1em solid var(--sapphire);
+  white-space:nowrap
+
+}
+
+.nav-client-portal-decoration {
+  text-decoration: none;
+}
+
 .navbar-container > ul {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 2em;
+
+  padding-bottom: .5em;
+
 }
 
 @media (max-width: 365px) {
 
   .navbar-container > ul {
-    display: flex;
     flex-direction: column;
     justify-content: left;
-    gap: 2em;
   }
 
 }
@@ -141,7 +190,7 @@ h2:not(.homepage-box-title), h3, h4 {
   align-items: baseline;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 920px) {
 
   .name-navbar-container {
     display: flex;
@@ -169,10 +218,17 @@ h2:not(.homepage-box-title), h3, h4 {
 .navbar-item > a {
   color: var(--sapphire);
   text-decoration: none;
+  transition: color 250ms ease;
 }
 
 .navbar-item > a:hover {
   color: var(--brown-gold);
+  
+}
+
+.navbar-item > a:active {
+  color: var(--darker-brown-gold);
+  
 }
 
 .navbar-item > a.active-page {
@@ -292,6 +348,7 @@ h2:not(.homepage-box-title), h3, h4 {
   text-align: center;
   padding: 4em 2em;
   min-height: 15em;
+  transition: all 250ms ease;
 }
 
 .box-icon {
@@ -300,19 +357,31 @@ h2:not(.homepage-box-title), h3, h4 {
 
 .homepage-box1:hover, .homepage-box2:hover, .homepage-box3:hover {
   color: white;
-  transition: background 250ms ease-in;
+  
 }
 
 .homepage-box1:hover {
   background-color: var(--sapphire);
 }
 
+.homepage-box1:active {
+  background-color: var(--darker-sapphire);
+}
+
 .homepage-box2:hover {
   background-color: var(--brown-yellow);
 }
 
+.homepage-box2:active {
+  background-color: var(--darker-brown-yellow);
+}
+
 .homepage-box3:hover {
   background-color: var(--pea-green);
+}
+
+.homepage-box3:active {
+  background-color: var(--darker-pea-green);
 }
 
 .homepage-box1:hover .box-icon, .homepage-box2:hover .box-icon, .homepage-box3:hover .box-icon {
@@ -369,6 +438,7 @@ h2:not(.homepage-box-title), h3, h4 {
 
 .services-item, .about-item {
   color: var(--brown-gold);
+  transition: all 250ms ease;
 }
 
 .services-item:hover, .about-item:hover {
@@ -417,6 +487,12 @@ h2:not(.homepage-box-title), h3, h4 {
 
 .contact-email-telephone {
   color: var(--brown-gold);
+  transition: all 250ms ease;
+}
+
+.contact-email-telephone:hover {
+  color: var(--sapphire);
+  text-decoration: none;
 }
 
 .g-map {
@@ -457,4 +533,290 @@ h2:not(.homepage-box-title), h3, h4 {
     align-items:flex-start;
   }
 
+}
+
+.log-in-container {
+  padding: 0 0 5em 0;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.sign-up-subtext {
+  text-align: center;
+}
+
+.log-in-form {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.form-container {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: .5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color:black;
+
+  gap: 1em;
+
+  padding: 1em 2em;
+
+}
+
+.form-container > h2 {
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+
+.log-in-username, .log-in-password {
+  display:flex;
+  flex-direction: column;
+}
+
+.email-input, .password-input, .name-input, .card-input, .exp-input, .cvv-input, .zip-input, .amount-input {
+  padding: .5em 1em;
+}
+
+.error-message {
+  display: none;
+}
+
+/* .email-input:not(:focus):not(:placeholder-shown):invalid {
+  border: .1em solid rgb(185, 35, 38);
+  background-color: rgba(185, 35, 38, .5);
+}
+
+.email-input:not(:focus):not(:placeholder-shown):invalid ~ .error-message{
+  display: table-caption;
+  text-align:center;
+  font-size:.75em;
+  padding-top: 1em;
+  color: rgb(185, 35, 38)
+} */
+
+.log-in-button, .reset-password-button, .create-account-button {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  font: inherit;
+  border-radius: 0;
+  appearance: none;
+}
+
+.log-in-button, .reset-password-button, .create-account-button  {
+  background-color: var(--sapphire);
+  color: white;
+  padding: .5em;
+  transition: all 250ms ease;
+}
+
+.log-in-button:hover, .reset-password-button:hover, .create-account-button:hover  {
+  background-color: var(--light-sapphire);
+}
+
+.log-in-button:active, .reset-password-button:active, .create-account-button:active  {
+  background-color: var(--lighter-sapphire);
+}
+
+.log-in-subtext {
+  color: var(--gray);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.log-in-subtext > p {
+  margin: 0;
+}
+
+.forgot-password-link, .create-account-link {
+  color: var(--brown-gold);
+  transition: all 250ms ease;
+}
+
+.forgot-password-link:hover, .create-account-link:hover {
+  color: var(--sapphire);
+  text-decoration: none;
+}
+
+.form-container > p {
+  color: var(--gray);
+}
+
+.dashboard-grid-rows {
+  display:grid;
+  grid-template-rows: 1fr 9fr;
+  min-height: max(100vh, fit-content);
+
+}
+
+.dashboard-grid-columns {
+  display: grid;
+  grid-template-columns: 2fr 11fr;
+  width: 100%;
+  height: auto;
+}
+
+.dashboard-content-container {
+  padding-left: 3em;
+  padding-right: 3em;
+  height: auto;
+}
+
+.dashboard-title {
+  
+  padding-left: 3em;
+}
+
+.dashboard-nav-container {
+  background-color: var(--sapphire);
+  color: white;
+  border-right: .25em solid var(--brown-gold);
+  height: auto;
+
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dashboard-icon {
+  height: 1.5em;
+  filter: invert(98%) sepia(100%) saturate(7%) hue-rotate(153deg) brightness(103%) contrast(104%);
+  fill:none;
+}
+
+.flex-align {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 1em;
+
+  text-decoration: none;
+
+}
+
+.dashboard-nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+.dashboard-content {
+  color: black;
+  border-bottom: .11em solid var(--silver);
+}
+
+.dashboard-nav-list {
+  display:flex;
+  flex-direction: column;
+  padding-top: 1em;
+
+  gap: .5em;
+}
+
+.dashboard-nav-item {
+  padding: .5em;
+}
+
+.dashboard-nav-item:hover {
+  background-color: var(--dark-sapphire);
+  
+}
+
+.dashboard-nav-item:active {
+  background-color: var(--darker-sapphire);
+}
+
+.dashboard-active-page {
+  padding: .5em;
+  background-color: var(--darker-sapphire);
+}
+
+.dashboard-home-content-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1em;
+}
+
+.dashboard-index-link, .dashboard-profile-link {
+  color: var(--brown-gold);
+  transition: all 250ms ease;
+}
+
+.dashboard-index-link:hover, .dashboard-profile-link:hover {
+  color: var(--sapphire);
+  text-decoration: none;
+}
+
+.credit-cards {
+  width: 18em;
+  margin: 0;
+  padding-bottom: 1em;
+}
+
+.payment-form {
+  display:flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: flex-start;
+}
+
+.name-container, .card-container, .email-zip-container {
+  display:flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.form-item {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.payment-confirmation-button, .dashboard-edit-button {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  font: inherit;
+  border-radius: 0;
+  appearance: none;
+}
+
+.payment-confirmation-button, .dashboard-edit-button  {
+  background-color: var(--sapphire);
+  color: white;
+  padding: .5em;
+  transition: all 250ms ease;
+}
+
+.payment-confirmation-button:hover, .dashboard-edit-button:hover  {
+  background-color: var(--light-sapphire);
+}
+
+.payment-confirmation-button:active, .dashboard-edit-button:active  {
+  background-color: var(--lighter-sapphire);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
