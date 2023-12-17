@@ -84,6 +84,14 @@ h2:not(.homepage-box-title), h3, h4 {
   font-size: 2em;
 }
 
+@media (max-width: 440px) {
+
+  .bryant-title {
+    font-size:6.5vw;
+  }
+
+}
+
 .cpa-title {
   color: var(--brown-red);
 }
