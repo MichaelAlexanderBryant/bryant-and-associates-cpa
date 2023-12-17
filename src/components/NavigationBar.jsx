@@ -43,7 +43,7 @@ function NavigationBar({page}) {
                                 <li><a href="/#/log-in" className="nav-client-portal-decoration"><div className="nav-client-portal">Client Portal</div></a></li>
                             </ul> :
 
-                            page == "about" ?
+                            page == "services" ?
 
                             <ul className="no-bullet-indent">
                                 <li className="navbar-item"><a href="/#">Home</a></li>
@@ -53,7 +53,7 @@ function NavigationBar({page}) {
                                 <li><a href="/#/log-in" className="nav-client-portal-decoration"><div className="nav-client-portal">Client Portal</div></a></li>
                             </ul> :
 
-                            page == "services" ?
+                            page == "about" ?
 
                             <ul className="no-bullet-indent">
                                 <li className="navbar-item"><a href="/#">Home</a></li>
