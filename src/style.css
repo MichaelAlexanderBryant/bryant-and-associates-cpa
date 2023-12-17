@@ -584,6 +584,27 @@ h2:not(.homepage-box-title), h3, h4 {
   flex-direction: column;
 }
 
+.email-input, .password-input, .name-input, .card-input, .exp-input, .cvv-input, .zip-input, .amount-input {
+  padding: .5em 1em;
+}
+
+.error-message {
+  display: none;
+}
+
+/* .email-input:not(:focus):not(:placeholder-shown):invalid {
+  border: .1em solid rgb(185, 35, 38);
+  background-color: rgba(185, 35, 38, .5);
+}
+
+.email-input:not(:focus):not(:placeholder-shown):invalid ~ .error-message{
+  display: table-caption;
+  text-align:center;
+  font-size:.75em;
+  padding-top: 1em;
+  color: rgb(185, 35, 38)
+} */
+
 .log-in-button, .reset-password-button, .create-account-button {
   background-color: transparent;
   border: none;
@@ -640,7 +661,8 @@ h2:not(.homepage-box-title), h3, h4 {
 .dashboard-grid-rows {
   display:grid;
   grid-template-rows: 1fr 9fr;
-  height: 100vh;
+  min-height: max(100vh, fit-content);
+
 }
 
 .dashboard-grid-columns {
@@ -755,6 +777,12 @@ h2:not(.homepage-box-title), h3, h4 {
   align-items: flex-start;
 }
 
+.name-container, .card-container, .email-zip-container {
+  display:flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
 .form-item {
   display:flex;
   flex-direction: column;
@@ -785,4 +813,10 @@ h2:not(.homepage-box-title), h3, h4 {
 
 .payment-confirmation-button:active, .dashboard-edit-button:active  {
   background-color: var(--lighter-sapphire);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

@@ -29,7 +29,7 @@ function ForgotPassword() {
                         <form className="log-in-form" onSubmit={onSubmit}>
                             <label className="log-in-username">
                                 Email:
-                                <input type="email"/>
+                                <input type="email" className="email-input" required/>
                             </label>
                             <input type="submit" value="Reset Password" className="reset-password-button"/>
                         </form>

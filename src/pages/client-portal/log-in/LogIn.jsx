@@ -23,11 +23,12 @@ function LogIn() {
                         <form className="log-in-form" onSubmit={logInUser}>
                             <label className="log-in-username">
                                 Email:
-                                <input type="email" name="email"/>
+                                <input type="email" name="email" className="email-input" placeholder="" required/>
+                                <div className="error-message">Please enter a valid email address.</div>
                             </label>
                             <label className="log-in-password">
                                 Password:
-                                <input type="password" name="password"/>
+                                <input type="password" name="password" className="password-input" required/>
                             </label>
                             <input type="submit" value="Log In" className="log-in-button"/>
                         </form>

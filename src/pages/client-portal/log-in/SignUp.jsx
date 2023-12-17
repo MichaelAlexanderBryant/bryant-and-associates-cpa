@@ -29,23 +29,23 @@ function SignUp() {
                         <form className="log-in-form" onSubmit={onSubmit}>
                             <label className="log-in-username">
                                 First name:
-                                <input type="text" name="first_name"/>
+                                <input type="text" name="first_name" className="name-input"/>
                             </label>
                             <label className="log-in-username">
                                 Last name:
-                                <input type="text" name="last_name"/>
+                                <input type="text" name="last_name" className="name-input"/>
                             </label>
                             <label className="log-in-username">
                                 Email:
-                                <input type="email" name="email"/>
+                                <input type="email" name="email" className="email-input"/>
                             </label>
                             <label className="log-in-password">
                                 Password:
-                                <input type="password" name="password1"/>
+                                <input type="password" name="password1" className="password-input"/>
                             </label>
                             <label className="log-in-password">
                                 Re-enter Password:
-                                <input type="password" name="password2"/>
+                                <input type="password" name="password2"  className="password-input"/>
                             </label>
                             <input type="submit" value="Create Account" className="create-account-button" />
                         </form>
