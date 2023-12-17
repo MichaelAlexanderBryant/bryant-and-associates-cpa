@@ -75,8 +75,8 @@ function NavigationBar({page}) {
 
                             <ul className="no-bullet-indent">
                                 <li className="navbar-item"><a href="/#">Home</a></li>
-                                <li className="navbar-item"><a href="/#/about">About</a></li>
                                 <li className="navbar-item"><a href="/#/services">Services</a></li>
+                                <li className="navbar-item"><a href="/#/about">About</a></li>
                                 <li className="navbar-item"><a href="/#/contact">Contact</a></li>
                                 <li><a href="/#/log-in" className="nav-client-portal-decoration"><div className="nav-client-portal-active">Client Portal</div></a></li>
                             </ul>
