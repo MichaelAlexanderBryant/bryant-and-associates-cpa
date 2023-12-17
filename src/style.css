@@ -79,6 +79,7 @@ h2:not(.homepage-box-title), h3, h4 {
 
 .bryant-title {
   color: black;
+  font-size: 2em;
 }
 
 .cpa-title {
@@ -151,6 +152,8 @@ h2:not(.homepage-box-title), h3, h4 {
   text-align: center;
   
   border: .1em solid var(--sapphire);
+  white-space:nowrap
+
 }
 
 .nav-client-portal-decoration {
@@ -160,9 +163,13 @@ h2:not(.homepage-box-title), h3, h4 {
 .navbar-container > ul {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: 2em;
+
+  padding-bottom: .5em;
+
 }
 
 @media (max-width: 365px) {
@@ -182,7 +189,7 @@ h2:not(.homepage-box-title), h3, h4 {
   align-items: baseline;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 920px) {
 
   .name-navbar-container {
     display: flex;

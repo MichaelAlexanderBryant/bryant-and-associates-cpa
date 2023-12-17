@@ -33,7 +33,7 @@ function LogIn() {
                         </form>
                         <div className="log-in-subtext">
                             <p><a href="/#/forgot-password" className="forgot-password-link">Forgot Your Password?</a></p>
-                            <p>New to Bryant & Associates CPA? <a href="/#/sign-up" className="create-account-link">Create an account.</a></p>
+                            {/* <p>New to Bryant & Associates CPA? <a href="/#/sign-up" className="create-account-link">Create an account.</a></p> */}
                         </div>
                     </div>
                 </div>
