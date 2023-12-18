@@ -1,21 +1,13 @@
-import email from "../assets/email.svg"
-import telephone from "../assets/telephone.svg"
-import PropTypes from 'prop-types'
+import email from "../assets/email.svg";
+import telephone from "../assets/telephone.svg";
 import { useLocation } from "react-router-dom";
 
-function NavigationBar({page}) {
-
-    NavigationBar.propTypes = {
-        page: PropTypes.string
-    };
-
-    NavigationBar.defaultProps = {
-        page: "home"
-    };
+function NavigationBar() {
 
     let location = useLocation();
-    location = location["pathname"].split("/")[1];
+    let pathName = location["pathname"].split("/")[1];
     const clientPortalPaths = ['log-in', 'forgot-password', 'sign-up','reset-password'];
+    console.log(pathName)
 
     return (
         <>
@@ -36,12 +28,12 @@ function NavigationBar({page}) {
                 <a href="/#" className="nav-title title"><div><h1 className="bryant-title">Bryant & Associates <span className="cpa-title">CPA</span></h1></div></a>
                 <div className="navbar-container">
                     <ul className="no-bullet-indent">
-                        <li className="navbar-item"><a href="/#" className={ location['pathname'] == '/' ?" active-page" : null}>Home</a></li>
-                        <li className="navbar-item"><a href="/#/services" className={ location['pathname'] == '/services' ?" active-page" : null}>Services</a></li>
-                        <li className="navbar-item"><a href="/#/about" className={ location['pathname'] == '/about' ?" active-page" : null}>About</a></li>
-                        <li className="navbar-item"><a href="/#/contact" className={ location['pathname'] == '/contact' ?" active-page" : null}>Contact</a></li>
+                        <li className="navbar-item"><a href="/#" className={ pathName == '' ?" active-page" : null}>Home</a></li>
+                        <li className="navbar-item"><a href="/#/services" className={ pathName == 'services' ?" active-page" : null}>Services</a></li>
+                        <li className="navbar-item"><a href="/#/about" className={ pathName == 'about' ?" active-page" : null}>About</a></li>
+                        <li className="navbar-item"><a href="/#/contact" className={ pathName == 'contact' ?" active-page" : null}>Contact</a></li>
                         <li><a href="/#/log-in" className="nav-client-portal-decoration">
-                            <div className={ clientPortalPaths.includes(location) ? "nav-client-portal-active" : "nav-client-portal"}>
+                            <div className={ clientPortalPaths.includes(pathName) ? "nav-client-portal-active" : "nav-client-portal"}>
                                 Client Portal
                             </div></a></li>
                     </ul>
