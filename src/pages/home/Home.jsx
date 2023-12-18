@@ -8,7 +8,7 @@ import contactUs from "../../assets/contact.svg"
 
 function Home() {
     return (
-        <div>
+        <div className="hompage-outer-container">
             <NavigationBar page={"home"} />
             <picture>
                 <source media="(max-width: 800px)" srcSet={helpImage800} sizes="800px"/>

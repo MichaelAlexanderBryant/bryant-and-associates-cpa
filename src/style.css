@@ -28,13 +28,19 @@ html, body {
   overflow: auto;
 }
 
-html{
-  height: 100%;
+html {
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
 }
 
 body {
-  min-height: 100%;
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
   color: var(--gray);
+  flex-grow: 1;
 }
 
 h1 {
@@ -422,6 +428,13 @@ h2:not(.homepage-box-title), h3, h4 {
 .clickable-box {
   color: var(--gray);
   text-decoration: none;
+}
+
+.about-outer-container {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .about-container {

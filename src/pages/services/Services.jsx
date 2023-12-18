@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 
 function Services() {
     return (
-        <div>
+        <div className="services-outer-container">
             <NavigationBar page="services" />
             <picture>
                 <source media="(max-width: 800px)" srcSet={taxPrep800} sizes="800px"/>

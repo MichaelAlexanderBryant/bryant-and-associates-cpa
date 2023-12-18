@@ -7,7 +7,6 @@ function NavigationBar() {
     let location = useLocation();
     let pathName = location["pathname"].split("/")[1];
     const clientPortalPaths = ['log-in', 'forgot-password', 'sign-up','reset-password'];
-    console.log(pathName)
 
     return (
         <>

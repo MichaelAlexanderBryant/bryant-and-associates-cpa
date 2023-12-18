@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 
 function About() {
     return (
-        <>
+        <div className="about-outer-container">
             <NavigationBar page="about"/>
             <picture>
                 <source media="(max-width: 800px)" srcSet={personCalc800} sizes="800px"/>
@@ -19,7 +19,7 @@ function About() {
                 
             </div>
             <Footer/>
-        </>
+        </div>
     )
 }
 
