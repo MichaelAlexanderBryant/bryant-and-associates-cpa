@@ -183,7 +183,7 @@ h2:not(.homepage-box-title), h3, h4 {
 
 }
 
-@media (max-width: 365px) {
+@media (max-width: 390px) {
 
   .navbar-container > ul {
     flex-direction: column;
