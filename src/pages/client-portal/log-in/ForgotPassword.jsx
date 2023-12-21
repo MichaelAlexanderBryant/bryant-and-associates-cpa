@@ -4,6 +4,7 @@ import logIn800 from "../../../assets/log-in-800w.jpg";
 import Footer from "../../../components/Footer";
 import { useNavigate } from "react-router-dom";
 import changePassword from "../../../utils/api/ChangePassword";
+import { useState } from "react";
 
 function ForgotPassword() {
 
@@ -15,9 +16,16 @@ function ForgotPassword() {
             navigate('/log-in');
         }
     }
+
+    let [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+    function passHamburgerOpen(status) {
+        setHamburgerOpen(status);
+    }
+
     return (
-        <>
-            <NavigationBar page="log-in"/>
+        <div className={hamburgerOpen? "hide-overflow": null} >
+            <NavigationBar page="log-in" passHamburgerOpen={passHamburgerOpen}/>
             <picture>
                 <source media="(max-width: 800px)" srcSet={logIn800} sizes="800px"/>
                 <img src={logIn} className="homepage-photo"/>
@@ -38,7 +46,7 @@ function ForgotPassword() {
                 </div>  
             </div>
             <Footer/>
-        </>
+        </div>
     )
 }
 

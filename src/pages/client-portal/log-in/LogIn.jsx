@@ -2,16 +2,22 @@ import NavigationBar from "../../../components/NavigationBar";
 import logIn from "../../../assets/log-in.jpg";
 import logIn800 from "../../../assets/log-in-800w.jpg";
 import Footer from "../../../components/Footer";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import AuthContext from "../../../context/AuthContext";
 
 function LogIn() {
 
     let {logInUser} = useContext(AuthContext);
 
+    let [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+    function passHamburgerOpen(status) {
+        setHamburgerOpen(status);
+    }
+
     return (
-        <>
-            <NavigationBar page="log-in"/>
+        <div className={hamburgerOpen? "hide-overflow": null} >
+            <NavigationBar page="log-in" passHamburgerOpen={passHamburgerOpen}/>
             <picture>
                 <source media="(max-width: 800px)" srcSet={logIn800} sizes="800px"/>
                 <img src={logIn} className="homepage-photo"/>
@@ -41,7 +47,7 @@ function LogIn() {
                 
             </div>
             <Footer/>
-        </>
+        </div>
     )
 }
 

@@ -956,3 +956,8 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+.hide-overflow {
+  height: 100vh;
+  overflow-y: hidden;
+}

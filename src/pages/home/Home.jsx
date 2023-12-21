@@ -5,11 +5,18 @@ import helpImage800 from "../../assets/home-page-banner-800w.jpg"
 import knowUs from "../../assets/know-us.svg"
 import help from "../../assets/get-help.svg"
 import contactUs from "../../assets/contact.svg"
+import { useState } from "react";
 
 function Home() {
+    let [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+    function passHamburgerOpen(status) {
+        setHamburgerOpen(status);
+    }
+
     return (
-        <div className="hompage-outer-container">
-            <NavigationBar page={"home"} />
+        <div className={hamburgerOpen? "hide-overflow hompage-outer-container hamburger-menu-open":"hompage-outer-container hamburger-menu-open"}>
+            <NavigationBar page={"home"} passHamburgerOpen={passHamburgerOpen} />
             <picture>
                 <source media="(max-width: 800px)" srcSet={helpImage800} sizes="800px"/>
                 <img src={helpImage} className="homepage-photo"/>

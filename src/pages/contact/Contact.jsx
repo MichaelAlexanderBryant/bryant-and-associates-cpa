@@ -2,11 +2,19 @@ import NavigationBar from "../../components/NavigationBar";
 import Footer from "../../components/Footer";
 import contactUs from "../../assets/contact-banner.jpg"
 import contactUs800 from "../../assets/contact-banner-800w.jpg"
+import { useState } from "react";
 
 function Contact() {
+
+    let [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+    function passHamburgerOpen(status) {
+        setHamburgerOpen(status);
+    }
+
     return (
-        <>
-            <NavigationBar page="contact" />
+        <div className={hamburgerOpen? "hide-overflow": null} >
+            <NavigationBar page="contact" passHamburgerOpen={passHamburgerOpen} />
             <picture>
                 <source media="(max-width: 800px)" srcSet={contactUs800} sizes="800px"/>
                 <img src={contactUs} className="homepage-photo"/>
@@ -56,7 +64,7 @@ function Contact() {
                 
             </div>
             <Footer/>
-        </>
+        </div>
     )
 }
 

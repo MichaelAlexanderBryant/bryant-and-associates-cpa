@@ -3,9 +3,13 @@ import telephone from "../assets/telephone.svg";
 import { useLocation } from "react-router-dom";
 import HamburgerNav from "./HamburgerNav";
 import { useState } from "react";
-import ClickAwayListener from '@mui/material/ClickAwayListener';
+import PropTypes from 'prop-types';
 
-function NavigationBar() {
+function NavigationBar(props) {
+
+    NavigationBar.propTypes = {
+        passHamburgerOpen: PropTypes.func,
+      };
 
     let location = useLocation();
     let pathName = location["pathname"].split("/")[1];
@@ -14,11 +18,13 @@ function NavigationBar() {
     let [hamburgerOpen, setHamburgerOpen] = useState(false);
 
     function toggleHamburger() {
-        setHamburgerOpen(!hamburgerOpen)
+        setHamburgerOpen(!hamburgerOpen);
+        props.passHamburgerOpen(!hamburgerOpen);
     }
 
     function handleClickAway(){
         setHamburgerOpen(false);
+        props.passHamburgerOpen(false);
     }
 
     return (
