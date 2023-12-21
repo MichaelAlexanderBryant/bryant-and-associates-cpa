@@ -1,6 +1,9 @@
 import email from "../assets/email.svg";
 import telephone from "../assets/telephone.svg";
 import { useLocation } from "react-router-dom";
+import HamburgerNav from "./HamburgerNav";
+import { useState } from "react";
+import ClickAwayListener from '@mui/material/ClickAwayListener';
 
 function NavigationBar() {
 
@@ -8,10 +11,40 @@ function NavigationBar() {
     let pathName = location["pathname"].split("/")[1];
     const clientPortalPaths = ['log-in', 'forgot-password', 'sign-up','reset-password'];
 
+    let [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+    function toggleHamburger() {
+        setHamburgerOpen(!hamburgerOpen)
+    }
+
+    function handleClickAway(){
+        setHamburgerOpen(false);
+    }
+
     return (
         <>
-        <div className="header-container header-top">
-            <ul className="header-email-phone no-bullet-indent content-container">
+        <div onClick={handleClickAway} className={hamburgerOpen ? "background-blur" : "display-nothing"}></div>
+            <div className={hamburgerOpen ? "burger-open" : "display-nothing"}>
+                    <ul className="no-bullet-indent burger-menu-list">
+                        <li className="navbar-item mobile-item">
+                            <a href="/#" onClick={pathName == '' ? ()=>window.location.reload() : null} className={ pathName == '' ?" active-page" : null}><div>Home</div></a>
+                        </li>
+                        <li className="navbar-item mobile-item">
+                            <a href="/#/services" onClick={pathName == 'services' ? ()=>window.location.reload() : null} className={ pathName == 'services' ?" active-page" : null}><div>Services</div></a>
+                        </li>
+                        <li className="navbar-item mobile-item">
+                            <a href="/#/about" onClick={pathName == 'about' ? ()=>window.location.reload() : null} className={ pathName == 'about' ?" active-page" : null}><div>About</div></a>
+                        </li>
+                        <li className="navbar-item mobile-item">
+                            <a href="/#/log-in" onClick={ clientPortalPaths.includes(pathName) ? ()=>window.location.reload() : null} className={ clientPortalPaths.includes(pathName) ? "active-page" : null}><div>Client Portal</div></a>
+                        </li>
+                        <li className="navbar-item mobile-item">
+                            <a href="/#/contact" onClick={pathName == 'contact' ? ()=>window.location.reload() : null} className={ pathName == 'contact' ?" active-page" : null}><div>Contact</div></a>
+                        </li>
+                    </ul>
+            </div>
+        <div className="header-container header-top mobile-header content-container">
+            <ul className="header-email-phone no-bullet-indent">
                 <li>
                     <img className="nav-icon" src={email}/>
                     <a className="nav-email-telephone-num" href="mailto:socalcpa123@gmail.com">socalcpa123@gmail.com</a>
@@ -21,6 +54,9 @@ function NavigationBar() {
                     <a className="nav-email-telephone-num" href="tel:7602895078">(760) 289-5078</a>
                 </li>
             </ul>
+            <div className={hamburgerOpen ? "display-nothing": "hamburger"} onClick={toggleHamburger}>
+                <HamburgerNav />
+            </div>
         </div>
         <div className="content-container">
             <div className="name-navbar-container">
